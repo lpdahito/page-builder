@@ -33,6 +33,10 @@ Based on the tool choice:
 
 Store any relevant patterns and guidelines internally to inform your design decisions.
 
+## Step 0: Scan assets
+
+Check `assets/` subfolders for logos, inspiration images, or brand materials. If found, use them to inform color and style suggestions in the following steps. Mention to the designer what you found.
+
 ## Step 1: Color palette
 
 Ask the designer:
@@ -49,6 +53,12 @@ Based on their choice, establish:
 - `accent` — highlights and CTAs
 - `background` — page background
 - `surface` — card/section background
+- `error` — destructive actions and error states
+- `warning` — caution indicators
+- `success` — confirmations and positive states
+- `info` — informational messages
+
+For each color, define both light and dark mode variants.
 
 Present the palette and ask for confirmation before proceeding.
 
@@ -78,12 +88,18 @@ Ask the designer:
 
 Update `design-system.json` with all choices.
 
-Generate a **design system reference frame** in the chosen tool:
-- Color swatches with labels
+Generate a **design system reference frame** in the chosen tool. Create two versions — **light mode** and **dark mode** — side by side or stacked:
+- Color swatches with labels (including status colors)
 - Typography samples (H1-H4, body, small)
-- Button styles (primary, secondary, outline)
+- Button styles (primary, secondary, outline, destructive)
+- Input fields (text input, select, checkbox)
 - Card example
+- Alert/notification examples (error, warning, success, info)
 - Spacing scale visualization
+
+### Design quality
+
+Apply the frontend-design skill principles: choose a bold aesthetic direction, use distinctive typography, and make intentional color choices. The design system frame itself should demonstrate the quality bar for all future pages.
 
 **If Pencil:**
 - Call `mcp__pencil__find_empty_space_on_canvas` to find placement
