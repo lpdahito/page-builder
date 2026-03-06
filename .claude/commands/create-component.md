@@ -1,6 +1,6 @@
 ---
 description: Design a specific component in an isolated frame
-allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__get_guidelines, mcp__pencil__get_editor_state, mcp__pencil__open_document, mcp__figma__generate_figma_design, mcp__figma__get_screenshot, mcp__figma__get_design_context]
+allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__get_guidelines, mcp__pencil__get_editor_state, mcp__pencil__open_document, mcp__figma__generate_figma_design, mcp__figma__get_screenshot, mcp__figma__get_design_context, mcp__paper__get_basic_info, mcp__paper__get_selection, mcp__paper__get_font_family_info, mcp__paper__create_artboard, mcp__paper__write_html, mcp__paper__get_screenshot, mcp__paper__update_styles, mcp__paper__set_text_content, mcp__paper__duplicate_nodes, mcp__paper__delete_nodes, mcp__paper__finish_working_on_nodes, mcp__paper__get_guide]
 ---
 
 # Page Builder — Create Component
@@ -57,6 +57,13 @@ Include relevant **variants/states** where applicable:
 **If Figma:**
 - Use `mcp__figma__generate_figma_design` to create the component
 - Call `mcp__figma__get_screenshot` to show the result
+
+**If Paper:**
+- Use `mcp__paper__create_artboard` to create an artboard labeled with the component name
+- Use `mcp__paper__write_html` to build the component and its variants in small pieces — one visual group per call
+- Use `mcp__paper__duplicate_nodes` to efficiently create variant states from the base component
+- Call `mcp__paper__get_screenshot` after every 2-3 write calls to review
+- Call `mcp__paper__finish_working_on_nodes` when done
 
 ## Step 4: Review
 

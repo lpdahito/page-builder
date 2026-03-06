@@ -1,6 +1,6 @@
 ---
 description: Create a new page with 2-3 design variants
-allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__get_guidelines, mcp__pencil__get_style_guide, mcp__pencil__get_style_guide_tags, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__snapshot_layout, mcp__pencil__get_editor_state, mcp__pencil__open_document, mcp__figma__generate_figma_design, mcp__figma__get_design_context, mcp__figma__get_screenshot]
+allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__get_guidelines, mcp__pencil__get_style_guide, mcp__pencil__get_style_guide_tags, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__snapshot_layout, mcp__pencil__get_editor_state, mcp__pencil__open_document, mcp__figma__generate_figma_design, mcp__figma__get_design_context, mcp__figma__get_screenshot, mcp__paper__get_basic_info, mcp__paper__get_selection, mcp__paper__get_tree_summary, mcp__paper__get_node_info, mcp__paper__get_font_family_info, mcp__paper__create_artboard, mcp__paper__write_html, mcp__paper__get_screenshot, mcp__paper__update_styles, mcp__paper__set_text_content, mcp__paper__duplicate_nodes, mcp__paper__delete_nodes, mcp__paper__finish_working_on_nodes, mcp__paper__get_guide]
 ---
 
 # Page Builder — Create Page
@@ -62,6 +62,15 @@ Announce: "I'm generating 3 variants for your [page name]. Watch your design too
 - Use `mcp__figma__generate_figma_design` to create 3 variants
 - Call `mcp__figma__get_screenshot` for each variant
 
+**If Paper:**
+- Call `mcp__paper__get_font_family_info` to verify fonts before first use
+- Use `mcp__paper__create_artboard` to create 3 artboards labeled "Variant A", "Variant B", "Variant C"
+- Use `mcp__paper__write_html` to build each variant in small pieces — one visual group per call
+- Each variant should use the same design system but differ in layout composition, component arrangement, or visual hierarchy
+- Call `mcp__paper__get_screenshot` after every 2-3 write calls to review progress
+- Use `mcp__paper__duplicate_nodes` when repeating similar elements across variants
+- Call `mcp__paper__finish_working_on_nodes` after completing each variant
+
 Show screenshots of all variants to the designer.
 
 ## Step 5: Choose variant
@@ -78,6 +87,7 @@ Remove the unchosen variants from the design tool.
 
 **If Pencil:** Use `mcp__pencil__batch_design` with Delete operations to remove unchosen frames.
 **If Figma:** Note: manual cleanup may be needed.
+**If Paper:** Use `mcp__paper__delete_nodes` to remove unchosen artboards.
 
 Update `sitemap.json` — add the new page:
 

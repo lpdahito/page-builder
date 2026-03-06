@@ -1,6 +1,6 @@
 # Page Builder
 
-A conversational page builder that runs as Claude Code slash commands. Designers answer questions and watch designs appear live in Figma or Pencil via MCP servers.
+A conversational page builder that runs as Claude Code slash commands. Designers answer questions and watch designs appear live in Figma, Pencil, or Paper via MCP servers.
 
 ## Commands
 

@@ -1,6 +1,6 @@
 # Page Builder
 
-A conversational page builder that runs as [Claude Code](https://docs.anthropic.com/en/docs/claude-code) slash commands. Designers answer questions and watch designs appear live in **Figma** or **Pencil** via MCP servers.
+A conversational page builder that runs as [Claude Code](https://docs.anthropic.com/en/docs/claude-code) slash commands. Designers answer questions and watch designs appear live in **Figma**, **Pencil**, or **Paper** via MCP servers.
 
 No code, no UI framework — just a CLI conversation that produces real designs, page by page.
 
@@ -10,14 +10,15 @@ No code, no UI framework — just a CLI conversation that produces real designs,
 - At least one design tool MCP server connected:
   - **Figma** — [Figma MCP server](https://github.com/nichochar/figma-mcp) with a valid API token
   - **Pencil** — Pencil MCP server with the desktop app running
+  - **Paper** — Paper MCP server with the Paper.design app running
 
 ## Getting Started
 
 1. **Clone the repo**
 
    ```bash
-   git clone git@github.com:lpdahito/page-builder.git
-   cd page-builder
+   git clone git@github.com:lpdahito/page-builder.git my-design-project
+   cd my-design-project
    ```
 
 2. **Open Claude Code** in the project directory
@@ -54,7 +55,7 @@ No code, no UI framework — just a CLI conversation that produces real designs,
 ## Project Structure
 
 ```
-page-builder/
+my-design-project/
 ├── .claude/
 │   ├── commands/       # Slash command definitions
 │   └── skills/         # Design skills (frontend-design, etc.)
@@ -90,7 +91,7 @@ Designer (CLI)
 Claude Code Commands (/start, /design-system, /create-page, ...)
     │              │
     ▼              ▼
-Local State       MCP Servers (Figma / Pencil)
+Local State       MCP Servers (Figma / Pencil / Paper)
 (JSON files)           │
                        ▼
                  Design Tool UI (live updates)

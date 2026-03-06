@@ -1,6 +1,6 @@
 ---
 description: Establish or update the design system (colors, typography, layout)
-allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__get_guidelines, mcp__pencil__get_style_guide_tags, mcp__pencil__get_style_guide, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__set_variables, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__open_document, mcp__pencil__get_editor_state, mcp__figma__generate_figma_design, mcp__figma__get_screenshot, mcp__figma__get_variable_defs]
+allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__get_guidelines, mcp__pencil__get_style_guide_tags, mcp__pencil__get_style_guide, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__set_variables, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__open_document, mcp__pencil__get_editor_state, mcp__figma__generate_figma_design, mcp__figma__get_screenshot, mcp__figma__get_variable_defs, mcp__paper__get_basic_info, mcp__paper__get_selection, mcp__paper__get_font_family_info, mcp__paper__create_artboard, mcp__paper__write_html, mcp__paper__get_screenshot, mcp__paper__update_styles, mcp__paper__set_text_content, mcp__paper__duplicate_nodes, mcp__paper__delete_nodes, mcp__paper__finish_working_on_nodes, mcp__paper__get_guide]
 ---
 
 # Page Builder — Design System
@@ -30,6 +30,11 @@ Based on the tool choice:
 
 **If Figma:**
 - Call `mcp__figma__get_variable_defs` if a file is already open, to check for existing tokens
+
+**If Paper:**
+- Call `mcp__paper__get_basic_info` to understand the file structure and existing artboards
+- Call `mcp__paper__get_font_family_info` to check available fonts before choosing typography
+- Call `mcp__paper__get_guide` with relevant topics for workflow guidance
 
 Store any relevant patterns and guidelines internally to inform your design decisions.
 
@@ -110,6 +115,13 @@ Apply the frontend-design skill principles: choose a bold aesthetic direction, u
 **If Figma:**
 - Use `mcp__figma__generate_figma_design` to create the design system page
 - Call `mcp__figma__get_screenshot` to show the result
+
+**If Paper:**
+- Call `mcp__paper__get_font_family_info` to verify chosen fonts are available
+- Use `mcp__paper__create_artboard` to create the design system artboard
+- Use `mcp__paper__write_html` to add content in small pieces — one visual group per call (color swatches, then typography samples, then buttons, etc.)
+- Call `mcp__paper__get_screenshot` after every 2-3 write calls to review
+- Call `mcp__paper__finish_working_on_nodes` when done
 
 ## Step 5: Confirm
 

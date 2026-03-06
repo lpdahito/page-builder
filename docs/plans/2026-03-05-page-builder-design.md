@@ -2,7 +2,7 @@
 
 ## Overview
 
-A conversational page builder that runs as Claude Code skills/slash commands. The designer types commands, answers questions, and watches designs appear live in Figma or Pencil. Local JSON files track the design system and sitemap. An assets folder provides pre-existing images.
+A conversational page builder that runs as Claude Code skills/slash commands. The designer types commands, answers questions, and watches designs appear live in Figma, Pencil, or Paper. Local JSON files track the design system and sitemap. An assets folder provides pre-existing images.
 
 The builder is UI-first, built for designers. Code export is out of scope for now.
 
@@ -15,7 +15,7 @@ Designer (CLI)
 Claude Code Skills (/start, /design-system, /create-page, etc.)
     |             |
     v             v
-Local State       MCP Servers (Figma, Pencil)
+Local State       MCP Servers (Figma, Pencil, Paper)
 (JSON files)           |
                        v
                   Design Tool UI (live updates)
@@ -40,7 +40,7 @@ Local State       MCP Servers (Figma, Pencil)
 ## Command Flows
 
 ### /start
-1. "Which design tool?" -> Figma / Pencil
+1. "Which design tool?" -> Figma / Pencil / Paper
 2. "What type of app?" -> SaaS, e-commerce, portfolio, landing page, etc.
 3. "Can you provide inspiration images?" -> Analyze style DNA + structural patterns
 4. Scan `assets/` folder and report what was found
@@ -169,6 +169,27 @@ assets/
 | Check layout | `snapshot_layout` | `get_design_context` |
 | Insert image/asset | `batch_design` (Generate image) | `generate_figma_design` |
 
+### Paper MCP Tool Mapping
+
+| Action | Paper |
+|---|---|
+| Create frame/page | `create_artboard` + `write_html` |
+| Read existing design | `get_tree_summary`, `get_children`, `get_node_info`, `get_jsx` |
+| Check fonts | `get_font_family_info` |
+| Screenshot for review | `get_screenshot` |
+| Check layout | `get_tree_summary`, `get_computed_styles` |
+| Modify styles | `update_styles` |
+| Update text | `set_text_content` |
+| Duplicate elements | `duplicate_nodes` |
+| Delete elements | `delete_nodes` |
+| Finish editing | `finish_working_on_nodes` (mandatory when done) |
+
+Paper uses HTML for content creation via `write_html`. Key workflow notes:
+- Write small, write often — one visual group per `write_html` call
+- Screenshot after every 2-3 modifications for review
+- Always call `get_font_family_info` before using fonts for the first time
+- Always call `finish_working_on_nodes` when done editing
+
 Before generating designs, the builder should:
 - Call `get_guidelines` with relevant topic based on app type
 - Call `get_style_guide_tags` -> `get_style_guide` for design inspiration
@@ -177,4 +198,3 @@ Before generating designs, the builder should:
 ## Out of Scope (for now)
 - Code export
 - Web UI for the builder
-- Paper tool integration (TBD)
