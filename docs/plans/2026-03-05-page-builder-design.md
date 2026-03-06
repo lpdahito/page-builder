@@ -35,6 +35,7 @@ Local State       MCP Servers (Figma, Pencil, Paper)
 | `/create-page` | Generate 2-3 page variants, designer picks one |
 | `/create-component` | Design a specific component in isolation |
 | `/refine` | Rework a selected component or section iteratively |
+| `/import` | Browse and import shadcn/ui components or blocks |
 | `/sitemap` | View or update the sitemap structure |
 
 ## Command Flows
@@ -73,6 +74,13 @@ Local State       MCP Servers (Figma, Pencil, Paper)
 2. Builder makes adjustments in the design tool
 3. Iterate until satisfied
 
+### /import
+1. Designer searches or browses shadcn/ui registry for components or blocks
+2. Results shown with descriptions; designer picks one
+3. Preview component code and summarize structure
+4. Render the component in the chosen design tool, adapted to the project's design system
+5. Designer reviews and can refine, try another variant, or import more
+
 ### /sitemap
 1. Display current sitemap from `sitemap.json`
 2. Allow reordering, renaming, or adding placeholder pages
@@ -89,6 +97,9 @@ Local State       MCP Servers (Figma, Pencil, Paper)
    |       |-> /refine (repeatable)
    |
    |-> /create-component (repeatable, standalone)
+   |       |-> /refine (repeatable)
+   |
+   |-> /import (repeatable, standalone — browse and import shadcn/ui)
    |       |-> /refine (repeatable)
    |
    |-> /sitemap (available anytime after start)

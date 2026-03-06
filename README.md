@@ -42,6 +42,7 @@ No code, no UI framework — just a CLI conversation that produces real designs,
 | `/create-page` | Generate 2-3 page variants, pick one to keep |
 | `/create-component` | Design a component in an isolated frame |
 | `/refine` | Iteratively adjust a component or section |
+| `/import` | Browse and import shadcn/ui components or blocks |
 | `/sitemap` | View or update the page structure |
 
 ### Typical workflow
@@ -50,7 +51,7 @@ No code, no UI framework — just a CLI conversation that produces real designs,
 /start → /design-system → /create-page (repeat) → /refine (as needed)
 ```
 
-`/create-component` and `/sitemap` can be used anytime after the design system is set up.
+`/create-component`, `/import`, and `/sitemap` can be used anytime after the design system is set up.
 
 ## Project Structure
 

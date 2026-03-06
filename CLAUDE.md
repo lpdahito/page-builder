@@ -9,6 +9,7 @@ A conversational page builder that runs as Claude Code slash commands. Designers
 - `/create-page` — Generate 2-3 page variants, pick one
 - `/create-component` — Design a component in isolation
 - `/refine` — Iteratively adjust a component or section
+- `/import` — Browse and import shadcn/ui components or blocks
 - `/sitemap` — View/manage page structure
 
 ---
