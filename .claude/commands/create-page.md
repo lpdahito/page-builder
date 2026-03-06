@@ -27,6 +27,17 @@ Common suggestions based on app type:
 
 Wait for their answer.
 
+### Shell assignment
+
+Read `sitemap.json` for available shells. If shells exist, ask:
+
+"Which layout should this page use?"
+- **[Shell Name]** — [list blocks, e.g. "topNav + footer"]
+- ...
+- **None** — standalone page, no shared layout (good for login, signup, error pages)
+
+Wait for their answer. Record the chosen shell ID (or `null` for standalone).
+
 ## Step 2: Page components
 
 Ask: "What key components should this page include?"
@@ -48,6 +59,29 @@ Use Glob to scan `assets/` for relevant images (logos for nav, avatars for profi
 ## Step 4: Generate 2-3 variants
 
 Read the design system from `design-system.json` and apply it consistently.
+
+### Shell block handling
+
+If the page has a shell assigned:
+
+1. Look up the shell in `sitemap.json`
+2. Check if `refs` is populated (has node IDs for the shell's blocks)
+
+**If refs are empty (first page in this shell):**
+- Generate the shell blocks (nav, sidebar, footer, etc.) as part of each variant
+- Use the design system tokens and app type to inform the block design
+- After the designer chooses a variant (Step 5), record the node IDs of each shell block in the shell's `refs` object in `sitemap.json`
+
+**If refs are populated (subsequent pages):**
+- For each ref in the shell, read the reference block from the design tool:
+  - **Pencil:** `mcp__pencil__batch_get` with the node ID, then `mcp__pencil__get_screenshot` of the node
+  - **Figma:** `mcp__figma__get_design_context` with the node ID, then `mcp__figma__get_screenshot`
+  - **Paper:** `mcp__paper__get_node_info` and `mcp__paper__get_jsx` for the node, then `mcp__paper__get_screenshot`
+- If a ref read fails (node deleted or missing), fall back to generating the block fresh from the shell definition + design system, and update the shell's `refs` after completion
+- Replicate the reference blocks in each variant, then generate only the unique page content in the remaining content area
+
+**If shell is null (standalone):**
+- Generate the full page with no shared blocks, as currently done
 
 Announce: "I'm generating 3 variants for your [page name]. Watch your design tool!"
 
@@ -89,15 +123,25 @@ Remove the unchosen variants from the design tool.
 **If Figma:** Note: manual cleanup may be needed.
 **If Paper:** Use `mcp__paper__delete_nodes` to remove unchosen artboards.
 
-Update `sitemap.json` — add the new page:
+Update `sitemap.json` — add the new page with its shell reference:
 
 ```json
 {
   "id": "<page-slug>",
   "name": "<Page Name>",
+  "shell": "<shell-id-or-null>",
   "status": "completed",
   "toolRef": "<frame-id-or-node-id>",
   "children": []
+}
+```
+
+If this was the first page in a shell (refs were empty), also update the shell's `refs` in `sitemap.json` with the node IDs of each shell block from the chosen variant:
+
+```json
+"refs": {
+  "topNav": "<node-id>",
+  "footer": "<node-id>"
 }
 ```
 

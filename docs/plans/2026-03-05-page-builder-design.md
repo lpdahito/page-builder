@@ -152,10 +152,22 @@ assets/
 ```json
 {
   "appName": "Acme Dashboard",
+  "shells": [
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "blocks": [
+        { "slot": "topNav", "position": "top" },
+        { "slot": "footer", "position": "bottom" }
+      ],
+      "refs": {}
+    }
+  ],
   "pages": [
     {
       "id": "login",
       "name": "Login",
+      "shell": null,
       "status": "completed",
       "toolRef": "frame-id-or-node-id",
       "children": []
@@ -164,6 +176,8 @@ assets/
 }
 ```
 
+- `shells` defines shared layouts; each shell has positioned blocks and `refs` that get populated when the first page in that shell is created
+- `shell` on a page references a shell ID, or `null` for standalone pages (e.g. login)
 - `toolRef` links each page to its frame/node in the design tool
 - `status`: planned -> in-progress -> completed
 - `children` allows nesting for sub-pages

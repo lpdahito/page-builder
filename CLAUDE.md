@@ -17,7 +17,7 @@ A conversational page builder that runs as Claude Code slash commands. Designers
 ## State files
 
 - `design-system.json` — Design tokens (colors, typography, layout, tool choice)
-- `sitemap.json` — App name and page tree with status and tool references
+- `sitemap.json` — App name, shells (shared layouts), and page tree with status and tool references
 
 ---
 
