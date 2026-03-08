@@ -130,14 +130,62 @@ Render a **palette preview** in the design tool showing the chosen colors with t
 
 Ask the designer:
 
-"What typography style fits your project?"
-1. **Clean & modern** — Inter / Plus Jakarta Sans
-2. **Professional** — DM Sans / Outfit
-3. **Bold & expressive** — Sora / Space Grotesk
-4. **Classic** — Merriweather / Lora (serif)
-5. **Custom** — specify your own fonts
+"Let's pick your typography. Would you like to:"
+1. **Browse pairings** — I'll render font pairings in your design tool so you can compare visually
+2. **Custom** — specify your own fonts
 
-Establish heading font, body font, and scale (compact, default, spacious).
+Wait for their answer.
+
+### Option 1: Browse pairings
+
+Based on the app type, project description, and inspiration notes from `design-system.json`, select 3–4 font pairings that suit the project. Each pairing has a heading font and a body font.
+
+Use Google Fonts. Before rendering, verify each font is available:
+- **If Paper:** call `mcp__paper__get_font_family_info` for each font family
+- **If Pencil / Figma:** confirm the fonts are available on Google Fonts
+
+Render the pairings side by side in the design tool. For each pairing, show:
+- The pairing name/label (e.g. "Pairing A — Clean & Modern")
+- A large heading sample using the heading font (e.g. "The quick brown fox")
+- A body paragraph sample using the body font (2–3 sentences of realistic placeholder text)
+- Font names and weights displayed as a small caption
+
+**If Pencil:**
+- Call `mcp__pencil__find_empty_space_on_canvas` to find space
+- Use `mcp__pencil__batch_design` to create a frame with the pairings laid out side by side
+- Call `mcp__pencil__get_screenshot` to show the result
+
+**If Figma:**
+- Use `mcp__figma__generate_figma_design` to create the font pairing frame
+- Call `mcp__figma__get_screenshot`
+
+**If Paper:**
+- Use `mcp__paper__create_artboard` to create a typography artboard
+- Use `mcp__paper__write_html` to render each pairing — one pairing per call
+- Call `mcp__paper__get_screenshot` after every 2 pairings to review
+- Call `mcp__paper__finish_working_on_nodes` when done
+
+Then ask the designer:
+
+"Here are some font pairings that suit your project. Which one do you like? Or I can:
+- Show you **more pairings** with a different vibe (e.g. bolder, more playful, more editorial)
+- **Mix and match** — pick a heading font from one pairing and a body font from another"
+
+Wait for their answer. If the designer asks for more options, generate a fresh set of 3–4 pairings with a different stylistic direction and render them. Repeat until the designer is satisfied. Delete pairing frames from the design tool once a choice is made.
+
+### Option 2: Custom
+
+Let the designer specify their own fonts. Verify availability (Google Fonts or system fonts) before accepting. If a font isn't available, suggest close alternatives.
+
+### After typography selection
+
+From the chosen pairing, establish:
+- **Heading font** — family and weight (e.g. Sora, 700)
+- **Body font** — family and weight (e.g. Inter, 400)
+- **Type scale** — ask the designer: "What density do you prefer for text sizing?"
+  - **Compact** — smaller sizes, tighter spacing (good for data-heavy UIs)
+  - **Default** — balanced readability
+  - **Spacious** — larger sizes, generous line height (good for marketing/editorial)
 
 ## Step 3: Layout style
 
