@@ -1,0 +1,17 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "E9tiX",
+      "x": -532,
+      "y": -416,
+      "name": "Frame 1",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    }
+  ]
+}

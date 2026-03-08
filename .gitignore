@@ -6,8 +6,9 @@ Thumbs.db
 design-system.json
 sitemap.json
 
-# Pencil design files
+# Pencil design files (except main.pen which ships with the repo)
 *.pen
+!main.pen
 
 # Node
 node_modules/
