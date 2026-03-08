@@ -18,6 +18,9 @@ No code, no UI framework — just a CLI conversation that produces real designs,
 
    ```bash
    git clone git@github.com:lpdahito/page-builder.git my-design-project
+   ```
+
+   ```bash
    cd my-design-project
    ```
 
