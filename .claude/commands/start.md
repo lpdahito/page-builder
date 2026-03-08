@@ -19,7 +19,7 @@ Ask the designer:
 Wait for their answer.
 
 If they choose Figma, verify the connection by calling `mcp__figma__whoami`.
-If they choose Pencil, call `mcp__pencil__get_editor_state` to check the current state. If no document is open, call `mcp__pencil__open_document` with `new` to create a fresh .pen file.
+If they choose Pencil, call `mcp__pencil__get_editor_state` to check the current state. If no document is open, call `mcp__pencil__open_document` with the path to `main.pen` in the project root to open it.
 If they choose Paper, call `mcp__paper__get_basic_info` to check the current file structure and available artboards.
 
 ## Step 2: App type
