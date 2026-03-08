@@ -46,26 +46,85 @@ Check `assets/` subfolders for logos, inspiration images, or brand materials. If
 
 Ask the designer:
 
-"Let's pick your color palette. Which approach do you prefer?"
-1. **Choose from Tailwind palettes** — I'll show you options that match your app type
-2. **Provide specific colors** — share hex codes or Tailwind color names
-3. **Extract from inspiration** — I'll derive colors from your inspiration images
-4. **Surprise me** — I'll pick a palette that fits your app type
+"Let's pick your color palette. Would you like to:"
+1. **Browse colors** — I'll render Tailwind's color palettes in your design tool so you can pick visually
+2. **Let me propose** — I'll suggest a palette based on your app type and description, and you approve or adjust
+3. **Provide your own** — share specific Tailwind color names (e.g. "blue for primary, slate for neutrals")
 
-Based on their choice, establish:
-- `primary` — main brand/action color
-- `secondary` — supporting color
-- `accent` — highlights and CTAs
-- `background` — page background
-- `surface` — card/section background
-- `error` — destructive actions and error states
-- `warning` — caution indicators
-- `success` — confirmations and positive states
-- `info` — informational messages
+Wait for their answer.
 
-For each color, define both light and dark mode variants.
+### Option 1: Browse colors
 
-Present the palette and ask for confirmation before proceeding.
+Render Tailwind's color palettes as swatches in the design tool. Organize them into two groups:
+
+**Neutrals** (for backgrounds, text, borders):
+slate, gray, zinc, neutral, stone, taupe, mauve, mist, olive
+
+**Chromatic** (for primary, secondary, accent):
+red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose
+
+For each color family, show shades 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950 as a horizontal row of swatches with the family name as a label. Use the Tailwind CSS v4 color values.
+
+**If Pencil:**
+- Call `mcp__pencil__find_empty_space_on_canvas` to find space
+- Use `mcp__pencil__batch_design` to create a frame labeled "Tailwind Colors — Neutrals" with neutral swatches, and a second frame "Tailwind Colors — Chromatic" with chromatic swatches
+- Call `mcp__pencil__get_screenshot` for each frame
+
+**If Figma:**
+- Use `mcp__figma__generate_figma_design` to create the color swatch frames
+- Call `mcp__figma__get_screenshot`
+
+**If Paper:**
+- Use `mcp__paper__create_artboard` to create artboards for neutral and chromatic swatches
+- Use `mcp__paper__write_html` to render each color family row — one family per call
+- Call `mcp__paper__get_screenshot` after every 2-3 families to review
+- Call `mcp__paper__finish_working_on_nodes` when done
+
+Then ask the designer:
+
+"Here are all the Tailwind colors. Pick the ones you'd like to use:
+- **Neutral family** — which neutral palette for backgrounds, text, and borders? (e.g. slate, zinc, stone)
+- **Primary** — your main brand/action color? (e.g. blue, indigo, emerald)
+- **Accent** — for highlights and CTAs? (can be the same as primary or a contrasting color)"
+
+Wait for their answer. Once chosen, delete the swatch frames from the design tool.
+
+### Option 2: Let me propose
+
+Based on the app type and project description from `design-system.json`, propose a palette using Tailwind color families. For example:
+- SaaS dashboard → zinc neutrals, blue primary, amber accent
+- E-commerce → stone neutrals, emerald primary, rose accent
+- Portfolio → neutral neutrals, indigo primary, amber accent
+
+Present the proposal as a short list:
+- **Neutrals:** [family] — for backgrounds, text, borders
+- **Primary:** [family] — for buttons, links, active states
+- **Accent:** [family] — for highlights, badges, CTAs
+
+Ask: "How does this palette sound? You can approve, swap any color family, or switch to browsing all colors."
+
+Wait for their answer.
+
+### Option 3: Provide your own
+
+Let the designer name Tailwind color families directly (e.g. "blue for primary, slate for neutrals, amber for accent"). Validate that the names match actual Tailwind families.
+
+### After color selection
+
+From the chosen color families, assign roles:
+- `neutral` — the neutral family (all shades used for backgrounds, text, borders)
+- `primary` — main brand/action color (shade 500 for default, with full range available)
+- `accent` — highlights and CTAs (shade 500 for default)
+- `error` — red (unless red is already primary/accent, then rose)
+- `warning` — amber (unless already taken, then yellow)
+- `success` — green (unless already taken, then emerald)
+- `info` — sky (unless already taken, then cyan)
+
+For each role, define both light and dark mode usage:
+- Light mode: neutral-50 background, neutral-900 text, primary-600 buttons
+- Dark mode: neutral-950 background, neutral-100 text, primary-400 buttons
+
+Render a **palette preview** in the design tool showing the chosen colors with their roles labeled. Take a screenshot and ask the designer to confirm before proceeding.
 
 ## Step 2: Typography
 
@@ -91,7 +150,21 @@ Ask the designer:
 
 ## Step 4: Save and generate
 
-Update `design-system.json` with all choices.
+Update `design-system.json` with all choices. Store colors as Tailwind family names:
+
+```json
+{
+  "colors": {
+    "neutral": "zinc",
+    "primary": "blue",
+    "accent": "amber",
+    "error": "red",
+    "warning": "amber",
+    "success": "green",
+    "info": "sky"
+  }
+}
+```
 
 Generate a **design system reference frame** in the chosen tool. Create two versions — **light mode** and **dark mode** — side by side or stacked:
 - Color swatches with labels (including status colors)

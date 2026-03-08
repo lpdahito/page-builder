@@ -38,7 +38,15 @@ Ask the designer:
 
 Wait for their answer.
 
-## Step 3: Page shells
+## Step 3: Project description
+
+Ask the designer:
+
+"Describe your project in a few sentences. What does the app do? Who is it for? Any key features or goals?"
+
+Wait for their answer. This description will be saved and used to inform design decisions throughout the project.
+
+## Step 4: Page shells
 
 Based on the app type, suggest default shells:
 
@@ -66,7 +74,7 @@ Wait for their answer. The designer can:
 - Change which blocks a shell includes
 - Skip shells entirely (no shells array will be created)
 
-## Step 4: Inspiration
+## Step 5: Inspiration
 
 Ask the designer:
 
@@ -85,7 +93,7 @@ If they added images to `assets/inspiration/`, use the Read tool to view each im
 
 Summarize what you found from the inspiration images.
 
-## Step 5: Scan assets folder
+## Step 6: Scan assets folder
 
 Use Glob to scan the `assets/` directory for any pre-existing files:
 - `assets/logos/*` — brand logos
@@ -97,7 +105,7 @@ Report what you found: "I found X logos, Y avatars, Z images, and W icons. I'll 
 
 If the folders are empty (only .gitkeep), say: "No assets found yet. You can add logos, avatars, and images to the `assets/` folder anytime and I'll incorporate them."
 
-## Step 6: Initialize state files
+## Step 7: Initialize state files
 
 Create `design-system.json` with the tool choice and app type:
 
@@ -105,10 +113,11 @@ Create `design-system.json` with the tool choice and app type:
 {
   "tool": "<chosen-tool>",
   "appType": "<chosen-app-type>",
+  "projectDescription": "<description-from-step-3>",
   "colors": {},
   "typography": {},
   "layout": {},
-  "inspirationNotes": "<summary-from-step-3>"
+  "inspirationNotes": "<summary-from-step-5>"
 }
 ```
 
@@ -139,6 +148,6 @@ Ask the designer: "What's the name of your app/project?"
 
 Update `sitemap.json` with the app name.
 
-## Step 7: Transition
+## Step 8: Transition
 
 Tell the designer: "Project initialized! Now let's establish your design system. Run `/design-system` to define your colors, typography, and layout preferences."
