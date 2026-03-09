@@ -9,7 +9,9 @@ You are designing a specific component in isolation. The component will be creat
 
 ## Prerequisites
 
-Read `design-system.json`. If it has empty `colors` or `typography`, tell the designer: "Please run `/design-system` first."
+Read `design-system.json`. If it doesn't exist, tell the designer: "Please run `/start` first to initialize your project."
+
+If it has empty `colors` or `typography`, use sensible defaults (zinc neutrals, blue primary, amber accent, Inter font) and proceed. Tell the designer: "No design system set up yet — using clean defaults. Run `/design-system` anytime to customize."
 
 ## Step 1: Which component?
 

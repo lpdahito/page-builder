@@ -10,7 +10,7 @@ You are refining a specific component or section of a design. The designer wants
 
 ## Prerequisites
 
-Read `design-system.json` for the tool choice and design tokens.
+Read `design-system.json` for the tool choice and design tokens. If colors/typography are empty, use sensible defaults (zinc neutrals, blue primary, amber accent, Inter font).
 
 ## Step 1: What to refine?
 

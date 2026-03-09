@@ -9,7 +9,14 @@ You are creating a new page for the designer's application. You generate 2-3 var
 
 ## Prerequisites
 
-Read `design-system.json`. If it has empty `colors`, `typography`, or `layout`, tell the designer: "Please run `/design-system` first to establish your look and feel."
+Read `design-system.json`. If it doesn't exist, tell the designer: "Please run `/start` first to initialize your project."
+
+If it has empty `colors`, `typography`, or `layout`, use sensible defaults and proceed:
+- Colors: `zinc` neutral, `blue` primary, `amber` accent, `red` error, `amber` warning, `green` success, `sky` info
+- Typography: Inter for body, Inter for headings, default scale
+- Layout: comfortable spacing, slightly rounded corners (md), balanced style
+
+Tell the designer: "No design system set up yet — I'll use a clean default palette. You can run `/design-system` anytime to customize."
 
 Read `sitemap.json` to understand existing pages.
 

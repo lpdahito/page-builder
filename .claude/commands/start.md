@@ -11,10 +11,10 @@ You are a conversational page builder that helps designers create frontend desig
 
 Ask the designer:
 
-"Which design tool would you like to use for this project?"
-- **Figma** — designs will be created in your Figma file
-- **Pencil** — designs will be created in a .pen file
-- **Paper** — designs will be created in Paper.design
+"Which design tool would you like to use?"
+- **Figma** — designs in your Figma file
+- **Pencil** — designs in a .pen file
+- **Paper** — designs in Paper.design
 
 Wait for their answer.
 
@@ -22,74 +22,42 @@ If they choose Figma, verify the connection by calling `mcp__figma__whoami`.
 If they choose Pencil, call `mcp__pencil__get_editor_state` to check the current state. If no document is open, call `mcp__pencil__open_document` with the path to `main.pen` in the project root to open it.
 If they choose Paper, call `mcp__paper__get_basic_info` to check the current file structure and available artboards.
 
-## Step 2: App type
+## Step 2: Quick context (single question)
 
-Ask the designer:
+Ask the designer ONE combined question:
 
-"What type of application are you building?"
-- SaaS dashboard
-- E-commerce store
-- Portfolio / personal site
-- Landing page
-- Mobile app
-- Blog / content site
-- Admin panel
-- Other (describe it)
+"Tell me a bit about your project — or just say **skip** to jump straight in.
 
-Wait for their answer.
+You can share any or all of:
+- What you're building (e.g. 'SaaS dashboard', 'portfolio site', 'mobile app')
+- A brief description (e.g. 'project management tool for small teams')
+- A project name"
 
-## Step 3: Project description
+Wait for their answer. Parse whatever they give you:
+- If they provide an app type, use it. Otherwise default to `"general"`.
+- If they provide a description, save it. Otherwise leave it empty.
+- If they provide a name, save it. Otherwise leave `appName` empty.
+- If they say "skip" or similar, use all defaults and move on immediately.
 
-Ask the designer:
+## Step 3: Scan assets and initialize
 
-"Describe your project in a few sentences. What does the app do? Who is it for? Any key features or goals?"
+Silently scan `assets/` for any pre-existing files (logos, avatars, images, icons, inspiration). If inspiration images exist in `assets/inspiration/`, read and analyze them.
 
-Wait for their answer. This description will be saved and used to inform design decisions throughout the project.
+Only mention assets if you found something useful: "I found some assets I can use in your designs — X logos, Y images."
 
-## Step 4: Inspiration
+Also silently check `assets/inspiration/` — if images exist, analyze them for style cues and store notes.
 
-Ask the designer:
-
-"Do you have any inspiration images or screenshots? You can:
-1. Drop them into the `assets/inspiration/` folder
-2. Describe the look you're going for
-3. Skip this for now"
-
-If they added images to `assets/inspiration/`, use the Read tool to view each image and analyze:
-- Color schemes and palettes
-- Typography styles
-- Layout patterns (grid, card-based, sidebar, etc.)
-- Spacing and density
-- Corner radius and shape language
-- Overall mood (minimal, bold, playful, corporate, etc.)
-
-Summarize what you found from the inspiration images.
-
-## Step 5: Scan assets folder
-
-Use Glob to scan the `assets/` directory for any pre-existing files:
-- `assets/logos/*` — brand logos
-- `assets/avatars/*` — user/team photos
-- `assets/images/*` — product photos, hero images
-- `assets/icons/*` — custom icons
-
-Report what you found: "I found X logos, Y avatars, Z images, and W icons. I'll use these in your designs."
-
-If the folders are empty (only .gitkeep), say: "No assets found yet. You can add logos, avatars, and images to the `assets/` folder anytime and I'll incorporate them."
-
-## Step 6: Initialize state files
-
-Create `design-system.json` with the tool choice and app type:
+Create `design-system.json`:
 
 ```json
 {
   "tool": "<chosen-tool>",
-  "appType": "<chosen-app-type>",
-  "projectDescription": "<description-from-step-3>",
+  "appType": "<from-step-2-or-general>",
+  "projectDescription": "<from-step-2-or-empty>",
   "colors": {},
   "typography": {},
   "layout": {},
-  "inspirationNotes": "<summary-from-step-5>"
+  "inspirationNotes": "<from-inspiration-images-or-empty>"
 }
 ```
 
@@ -97,16 +65,12 @@ Create `sitemap.json`:
 
 ```json
 {
-  "appName": "",
+  "appName": "<from-step-2-or-empty>",
   "shells": [],
   "pages": []
 }
 ```
 
-Ask the designer: "What's the name of your app/project?"
+## Step 4: Transition
 
-Update `sitemap.json` with the app name.
-
-## Step 7: Transition
-
-Tell the designer: "Project initialized! Now let's establish your design system. Run `/design-system` to define your colors, typography, and layout preferences."
+Tell the designer: "You're all set! Run `/design-system` to pick your colors, fonts, and layout — or jump straight to `/create-page` if you want to start designing right away."

@@ -40,7 +40,7 @@ When creating page designs, follow these guidelines:
 
 - **Light & Dark Mode**: Use `dark:` variants for all colors. Test that all UI elements are visible and readable in both modes.
 
-- **Use Design Tokens**: When design tokens are defined, apply the product's color palette and typography. Otherwise, fall back to `taupe` for neutrals and `lime` for accents.
+- **Use Design Tokens**: When design tokens are defined, apply the product's color palette and typography. Otherwise, fall back to `zinc` for neutrals and `blue` for primary.
 
 - **Use Built-in Tailwind CSS Colors**: Avoid defining custom colors. Use Tailwind's built-in color utility classes (e.g., `stone-500`, `lime-400`, `red-600`).
 

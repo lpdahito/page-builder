@@ -55,20 +55,12 @@ Wait for their answer.
 
 ### Option 1: Browse colors
 
-Render Tailwind's color palettes as swatches in the design tool. Organize them into two groups:
-
-**Neutrals** (for backgrounds, text, borders):
-slate, gray, zinc, neutral, stone, taupe, mauve, mist, olive
-
-**Chromatic** (for primary, secondary, accent):
-red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose
-
-For each color family, show shades 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950 as a horizontal row of swatches with the family name as a label. Use the Tailwind CSS v4 color values.
+The `main.pen` file ships with pre-built Tailwind color swatch frames:
+- **"Tailwind Colors — Neutrals"** — slate, gray, zinc, neutral, stone, taupe, mauve (shades 50–950)
+- **"Tailwind Colors — Chromatic"** — red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose (shades 50–950)
 
 **If Pencil:**
-- Call `mcp__pencil__find_empty_space_on_canvas` to find space
-- Use `mcp__pencil__batch_design` to create a frame labeled "Tailwind Colors — Neutrals" with neutral swatches, and a second frame "Tailwind Colors — Chromatic" with chromatic swatches
-- Call `mcp__pencil__get_screenshot` for each frame
+- The swatches are already in `main.pen`. Call `mcp__pencil__get_screenshot` on each swatch frame (node IDs `PZP1d` for Neutrals, `16jND` for Chromatic) so the designer can see them.
 
 **If Figma:**
 - Use `mcp__figma__generate_figma_design` to create the color swatch frames
@@ -87,7 +79,7 @@ Then ask the designer:
 - **Primary** — your main brand/action color? (e.g. blue, indigo, emerald)
 - **Accent** — for highlights and CTAs? (can be the same as primary or a contrasting color)"
 
-Wait for their answer. Once chosen, delete the swatch frames from the design tool.
+Wait for their answer. Once chosen, delete the swatch frames from the design tool (except for Pencil, where the swatches are part of `main.pen` and should be kept).
 
 ### Option 2: Let me propose
 
