@@ -27,6 +27,49 @@ Common suggestions based on app type:
 
 Wait for their answer.
 
+### Shell setup (first page only)
+
+Read `sitemap.json`. If the `shells` array is empty, set up shells before proceeding.
+
+Based on the app type from `design-system.json`, suggest default shells:
+
+| App Type | Suggested Shells |
+|---|---|
+| SaaS dashboard | `marketing` (topNav + footer), `dashboard` (sidebar + topBar) |
+| E-commerce store | `marketing` (topNav + footer), `account` (topNav + sidebar) |
+| Portfolio / personal site | `marketing` (topNav + footer) |
+| Landing page | `marketing` (topNav + footer) |
+| Mobile app | `app` (bottomTabs + topBar) |
+| Blog / content site | `marketing` (topNav + footer) |
+| Admin panel | `admin` (sidebar + topBar) |
+
+Present the suggestions and ask:
+
+"Most apps share common layouts across pages — like a marketing site with a navbar and footer, or a dashboard with a sidebar. I'd suggest these shells for your app:
+
+[list shells with their blocks]
+
+Want to keep these, modify them, or skip shells entirely?"
+
+Wait for their answer. The designer can:
+- Keep the defaults
+- Add, remove, or rename shells
+- Change which blocks a shell includes
+- Skip shells entirely (no shells will be created)
+
+If the designer chose shells, populate the `shells` array in `sitemap.json`:
+
+```json
+{
+  "id": "<shell-slug>",
+  "name": "<Shell Name>",
+  "blocks": [
+    { "slot": "<block-name>", "position": "<top|bottom|left|right>" }
+  ],
+  "refs": {}
+}
+```
+
 ### Shell assignment
 
 Read `sitemap.json` for available shells. If shells exist, ask:

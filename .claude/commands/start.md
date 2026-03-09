@@ -46,35 +46,7 @@ Ask the designer:
 
 Wait for their answer. This description will be saved and used to inform design decisions throughout the project.
 
-## Step 4: Page shells
-
-Based on the app type, suggest default shells:
-
-| App Type | Suggested Shells |
-|---|---|
-| SaaS dashboard | `marketing` (topNav + footer), `dashboard` (sidebar + topBar) |
-| E-commerce store | `marketing` (topNav + footer), `account` (topNav + sidebar) |
-| Portfolio / personal site | `marketing` (topNav + footer) |
-| Landing page | `marketing` (topNav + footer) |
-| Mobile app | `app` (bottomTabs + topBar) |
-| Blog / content site | `marketing` (topNav + footer) |
-| Admin panel | `admin` (sidebar + topBar) |
-
-Present the suggestions and ask:
-
-"Most apps share common layouts across pages — like a marketing site with a navbar and footer, or a dashboard with a sidebar. I'd suggest these shells for your app:
-
-[list shells with their blocks]
-
-Want to keep these, modify them, or skip shells for now?"
-
-Wait for their answer. The designer can:
-- Keep the defaults
-- Add, remove, or rename shells
-- Change which blocks a shell includes
-- Skip shells entirely (no shells array will be created)
-
-## Step 5: Inspiration
+## Step 4: Inspiration
 
 Ask the designer:
 
@@ -93,7 +65,7 @@ If they added images to `assets/inspiration/`, use the Read tool to view each im
 
 Summarize what you found from the inspiration images.
 
-## Step 6: Scan assets folder
+## Step 5: Scan assets folder
 
 Use Glob to scan the `assets/` directory for any pre-existing files:
 - `assets/logos/*` — brand logos
@@ -105,7 +77,7 @@ Report what you found: "I found X logos, Y avatars, Z images, and W icons. I'll 
 
 If the folders are empty (only .gitkeep), say: "No assets found yet. You can add logos, avatars, and images to the `assets/` folder anytime and I'll incorporate them."
 
-## Step 7: Initialize state files
+## Step 6: Initialize state files
 
 Create `design-system.json` with the tool choice and app type:
 
@@ -131,23 +103,10 @@ Create `sitemap.json`:
 }
 ```
 
-If the designer chose shells in Step 3, populate the `shells` array with their choices:
-
-```json
-{
-  "id": "<shell-slug>",
-  "name": "<Shell Name>",
-  "blocks": [
-    { "slot": "<block-name>", "position": "<top|bottom|left|right>" }
-  ],
-  "refs": {}
-}
-```
-
 Ask the designer: "What's the name of your app/project?"
 
 Update `sitemap.json` with the app name.
 
-## Step 8: Transition
+## Step 7: Transition
 
 Tell the designer: "Project initialized! Now let's establish your design system. Run `/design-system` to define your colors, typography, and layout preferences."
