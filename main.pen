@@ -3,15 +3,3419 @@
   "children": [
     {
       "type": "frame",
-      "id": "E9tiX",
-      "x": -532,
-      "y": -416,
-      "name": "Frame 1",
-      "clip": true,
-      "width": 800,
-      "height": 600,
+      "id": "PZP1d",
+      "x": 269,
+      "y": -466,
+      "name": "Tailwind Colors — Neutrals",
+      "width": 1700,
       "fill": "#FFFFFF",
-      "layout": "none"
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 32,
+      "children": [
+        {
+          "type": "text",
+          "id": "NSYOe",
+          "name": "title",
+          "fill": "#111111",
+          "content": "Tailwind Colors — Neutrals",
+          "fontFamily": "Inter",
+          "fontSize": 24,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "jdFBJ",
+          "name": "subtitle",
+          "fill": "#666666",
+          "content": "Pick a neutral family for backgrounds, text, and borders",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "TLvHC",
+          "name": "labelsRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SkMuV",
+              "name": "spacer",
+              "width": 80,
+              "height": 16
+            },
+            {
+              "type": "text",
+              "id": "gbMQ3",
+              "name": "l50",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "50",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "1uG2z",
+              "name": "l100",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "100",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "TVy9d",
+              "name": "l200",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "200",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "7Zlx1",
+              "name": "l300",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "300",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "40ko4",
+              "name": "l400",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "400",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Aq6Jg",
+              "name": "l500",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "500",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "BEnyp",
+              "name": "l600",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "600",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "svPfE",
+              "name": "l700",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "700",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kGQ9G",
+              "name": "l800",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "800",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Mkmz9",
+              "name": "l900",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "900",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Crkc6",
+              "name": "l950",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "950",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xYu17",
+          "name": "slateRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fsU7e",
+              "name": "slateLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "slate",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "FE0yR",
+              "name": "s50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f8fafc"
+            },
+            {
+              "type": "frame",
+              "id": "NOS1c",
+              "name": "s100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f1f5f9"
+            },
+            {
+              "type": "frame",
+              "id": "PXSS4",
+              "name": "s200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e2e8f0"
+            },
+            {
+              "type": "frame",
+              "id": "P79lk",
+              "name": "s300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#cbd5e1"
+            },
+            {
+              "type": "frame",
+              "id": "aCcCK",
+              "name": "s400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#94a3b8"
+            },
+            {
+              "type": "frame",
+              "id": "1JS2J",
+              "name": "s500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#64748b"
+            },
+            {
+              "type": "frame",
+              "id": "HBwko",
+              "name": "s600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#475569"
+            },
+            {
+              "type": "frame",
+              "id": "RjKph",
+              "name": "s700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#334155"
+            },
+            {
+              "type": "frame",
+              "id": "4Aca8",
+              "name": "s800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1e293b"
+            },
+            {
+              "type": "frame",
+              "id": "sBXaB",
+              "name": "s900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0f172a"
+            },
+            {
+              "type": "frame",
+              "id": "Oqdm3",
+              "name": "s950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#020617"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pm0zA",
+          "name": "grayRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "5kRhA",
+              "name": "grayLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "gray",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "5C0sU",
+              "name": "g50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f9fafb"
+            },
+            {
+              "type": "frame",
+              "id": "udfuJ",
+              "name": "g100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f3f4f6"
+            },
+            {
+              "type": "frame",
+              "id": "bx3BT",
+              "name": "g200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e5e7eb"
+            },
+            {
+              "type": "frame",
+              "id": "M3Xz5",
+              "name": "g300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d1d5db"
+            },
+            {
+              "type": "frame",
+              "id": "A8aVm",
+              "name": "g400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#9ca3af"
+            },
+            {
+              "type": "frame",
+              "id": "TMPvH",
+              "name": "g500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6b7280"
+            },
+            {
+              "type": "frame",
+              "id": "jO1rJ",
+              "name": "g600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4b5563"
+            },
+            {
+              "type": "frame",
+              "id": "4Oknw",
+              "name": "g700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#374151"
+            },
+            {
+              "type": "frame",
+              "id": "8vrqr",
+              "name": "g800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1f2937"
+            },
+            {
+              "type": "frame",
+              "id": "Hn788",
+              "name": "g900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#111827"
+            },
+            {
+              "type": "frame",
+              "id": "zoxpz",
+              "name": "g950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#030712"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "o6cky",
+          "name": "zincRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "qrpTv",
+              "name": "zincLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "zinc",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "QVHbN",
+              "name": "z50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fafafa"
+            },
+            {
+              "type": "frame",
+              "id": "iU07t",
+              "name": "z100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f4f4f5"
+            },
+            {
+              "type": "frame",
+              "id": "qxKLx",
+              "name": "z200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e4e4e7"
+            },
+            {
+              "type": "frame",
+              "id": "hyHfI",
+              "name": "z300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d4d4d8"
+            },
+            {
+              "type": "frame",
+              "id": "ScodB",
+              "name": "z400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a1a1aa"
+            },
+            {
+              "type": "frame",
+              "id": "NZnbX",
+              "name": "z500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#71717a"
+            },
+            {
+              "type": "frame",
+              "id": "wuKjf",
+              "name": "z600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#52525b"
+            },
+            {
+              "type": "frame",
+              "id": "sym1K",
+              "name": "z700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3f3f46"
+            },
+            {
+              "type": "frame",
+              "id": "U3elb",
+              "name": "z800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#27272a"
+            },
+            {
+              "type": "frame",
+              "id": "3Eu4O",
+              "name": "z900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#18181b"
+            },
+            {
+              "type": "frame",
+              "id": "a6Hnc",
+              "name": "z950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#09090b"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fo68n",
+          "name": "neutralRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JbScc",
+              "name": "neutralLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "neutral",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "9cWgX",
+              "name": "n50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fafafa"
+            },
+            {
+              "type": "frame",
+              "id": "toWXT",
+              "name": "n100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f5f5f5"
+            },
+            {
+              "type": "frame",
+              "id": "BfPkF",
+              "name": "n200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e5e5e5"
+            },
+            {
+              "type": "frame",
+              "id": "bfdar",
+              "name": "n300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d4d4d4"
+            },
+            {
+              "type": "frame",
+              "id": "9VPR1",
+              "name": "n400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a3a3a3"
+            },
+            {
+              "type": "frame",
+              "id": "rtwiW",
+              "name": "n500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#737373"
+            },
+            {
+              "type": "frame",
+              "id": "1OXLc",
+              "name": "n600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#525252"
+            },
+            {
+              "type": "frame",
+              "id": "ULBTn",
+              "name": "n700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#404040"
+            },
+            {
+              "type": "frame",
+              "id": "rX0AO",
+              "name": "n800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#262626"
+            },
+            {
+              "type": "frame",
+              "id": "y7ZVf",
+              "name": "n900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#171717"
+            },
+            {
+              "type": "frame",
+              "id": "Vjhve",
+              "name": "n950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0a0a0a"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ltWLE",
+          "name": "stoneRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Mr28h",
+              "name": "stoneLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "stone",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "aMjRK",
+              "name": "st50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fafaf9"
+            },
+            {
+              "type": "frame",
+              "id": "6pJBR",
+              "name": "st100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f5f5f4"
+            },
+            {
+              "type": "frame",
+              "id": "olXIW",
+              "name": "st200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e7e5e4"
+            },
+            {
+              "type": "frame",
+              "id": "xloz0",
+              "name": "st300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d6d3d1"
+            },
+            {
+              "type": "frame",
+              "id": "NYKqF",
+              "name": "st400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a8a29e"
+            },
+            {
+              "type": "frame",
+              "id": "OLih5",
+              "name": "st500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#78716c"
+            },
+            {
+              "type": "frame",
+              "id": "bq76B",
+              "name": "st600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#57534e"
+            },
+            {
+              "type": "frame",
+              "id": "0f8Yw",
+              "name": "st700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#44403c"
+            },
+            {
+              "type": "frame",
+              "id": "Hnjqm",
+              "name": "st800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#292524"
+            },
+            {
+              "type": "frame",
+              "id": "LN87q",
+              "name": "st900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1c1917"
+            },
+            {
+              "type": "frame",
+              "id": "VmYbm",
+              "name": "st950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0c0a09"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jgDUi",
+          "name": "taupeRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "zHIER",
+              "name": "taupeLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "taupe",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "xri0e",
+              "name": "t50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#faf9f7"
+            },
+            {
+              "type": "frame",
+              "id": "n6kJN",
+              "name": "t100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f3f1ed"
+            },
+            {
+              "type": "frame",
+              "id": "csWVE",
+              "name": "t200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e5e2dc"
+            },
+            {
+              "type": "frame",
+              "id": "eE7S6",
+              "name": "t300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d5d0c8"
+            },
+            {
+              "type": "frame",
+              "id": "CXTSX",
+              "name": "t400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ada69c"
+            },
+            {
+              "type": "frame",
+              "id": "Ta2E1",
+              "name": "t500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#857e74"
+            },
+            {
+              "type": "frame",
+              "id": "HdaR6",
+              "name": "t600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6b6459"
+            },
+            {
+              "type": "frame",
+              "id": "9AbYg",
+              "name": "t700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#524c42"
+            },
+            {
+              "type": "frame",
+              "id": "gStQ7",
+              "name": "t800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3a352d"
+            },
+            {
+              "type": "frame",
+              "id": "ENnTG",
+              "name": "t900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#25211b"
+            },
+            {
+              "type": "frame",
+              "id": "p1H3E",
+              "name": "t950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#130f0a"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fv7vg",
+          "name": "mauveRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "5bsNt",
+              "name": "mauveLabel",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "mauve",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "slvhp",
+              "name": "m50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#faf9fb"
+            },
+            {
+              "type": "frame",
+              "id": "9QxRv",
+              "name": "m100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f3f1f5"
+            },
+            {
+              "type": "frame",
+              "id": "pWsqn",
+              "name": "m200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e5e2ea"
+            },
+            {
+              "type": "frame",
+              "id": "GQd7I",
+              "name": "m300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d5d0dc"
+            },
+            {
+              "type": "frame",
+              "id": "rUCQh",
+              "name": "m400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ada6b4"
+            },
+            {
+              "type": "frame",
+              "id": "OANwq",
+              "name": "m500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#857e8c"
+            },
+            {
+              "type": "frame",
+              "id": "zAedP",
+              "name": "m600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6b6472"
+            },
+            {
+              "type": "frame",
+              "id": "91Grk",
+              "name": "m700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#524c58"
+            },
+            {
+              "type": "frame",
+              "id": "qN8nn",
+              "name": "m800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3a353f"
+            },
+            {
+              "type": "frame",
+              "id": "3ounN",
+              "name": "m900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#25212a"
+            },
+            {
+              "type": "frame",
+              "id": "VyOFy",
+              "name": "m950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#130f17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "16jND",
+      "x": 269,
+      "y": 276,
+      "name": "Tailwind Colors — Chromatic",
+      "width": 1700,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 32,
+      "children": [
+        {
+          "type": "text",
+          "id": "eacDJ",
+          "name": "ctitle",
+          "fill": "#111111",
+          "content": "Tailwind Colors — Chromatic",
+          "fontFamily": "Inter",
+          "fontSize": 24,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "DuDvj",
+          "name": "csub",
+          "fill": "#666666",
+          "content": "Pick a primary and accent color",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "Aph9p",
+          "name": "clabels",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Lqb3U",
+              "name": "cspacer",
+              "width": 80,
+              "height": 16
+            },
+            {
+              "type": "text",
+              "id": "aCErq",
+              "name": "cl50",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "50",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vxvh8",
+              "name": "cl100",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "100",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xxAZz",
+              "name": "cl200",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "200",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "yxROm",
+              "name": "cl300",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "300",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "52r1b",
+              "name": "cl400",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "400",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "z4CPZ",
+              "name": "cl500",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "500",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "3gpYw",
+              "name": "cl600",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "600",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "IQQaa",
+              "name": "cl700",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "700",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "4LDAu",
+              "name": "cl800",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "800",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "VkTM0",
+              "name": "cl900",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "900",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "pyYC8",
+              "name": "cl950",
+              "fill": "#999999",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "950",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pZH3e",
+          "name": "redRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "EvvsC",
+              "name": "redLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "red",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "NwXDG",
+              "name": "r50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fef2f2"
+            },
+            {
+              "type": "frame",
+              "id": "Ud8H6",
+              "name": "r100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fee2e2"
+            },
+            {
+              "type": "frame",
+              "id": "lyCWR",
+              "name": "r200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fecaca"
+            },
+            {
+              "type": "frame",
+              "id": "1CK9a",
+              "name": "r300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fca5a5"
+            },
+            {
+              "type": "frame",
+              "id": "CfmXr",
+              "name": "r400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f87171"
+            },
+            {
+              "type": "frame",
+              "id": "xWJF1",
+              "name": "r500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ef4444"
+            },
+            {
+              "type": "frame",
+              "id": "cEh7L",
+              "name": "r600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#dc2626"
+            },
+            {
+              "type": "frame",
+              "id": "bn2ZZ",
+              "name": "r700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#b91c1c"
+            },
+            {
+              "type": "frame",
+              "id": "LJyfq",
+              "name": "r800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#991b1b"
+            },
+            {
+              "type": "frame",
+              "id": "dgkZf",
+              "name": "r900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#7f1d1d"
+            },
+            {
+              "type": "frame",
+              "id": "gA6U8",
+              "name": "r950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#450a0a"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0kyaq",
+          "name": "orangeRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "0NCNy",
+              "name": "orangeLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "orange",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ISjt3",
+              "name": "o50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fff7ed"
+            },
+            {
+              "type": "frame",
+              "id": "2lvwL",
+              "name": "o100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ffedd5"
+            },
+            {
+              "type": "frame",
+              "id": "84ucx",
+              "name": "o200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fed7aa"
+            },
+            {
+              "type": "frame",
+              "id": "W00gp",
+              "name": "o300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fdba74"
+            },
+            {
+              "type": "frame",
+              "id": "zitmd",
+              "name": "o400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fb923c"
+            },
+            {
+              "type": "frame",
+              "id": "87fNG",
+              "name": "o500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f97316"
+            },
+            {
+              "type": "frame",
+              "id": "mvllg",
+              "name": "o600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ea580c"
+            },
+            {
+              "type": "frame",
+              "id": "9qvHi",
+              "name": "o700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#c2410c"
+            },
+            {
+              "type": "frame",
+              "id": "iZQne",
+              "name": "o800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#9a3412"
+            },
+            {
+              "type": "frame",
+              "id": "pC8NC",
+              "name": "o900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#7c2d12"
+            },
+            {
+              "type": "frame",
+              "id": "ovOR6",
+              "name": "o950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#431407"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3M52c",
+          "name": "amberRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w2mfb",
+              "name": "amberLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "amber",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Ds5pQ",
+              "name": "a50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fffbeb"
+            },
+            {
+              "type": "frame",
+              "id": "mo85g",
+              "name": "a100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fef3c7"
+            },
+            {
+              "type": "frame",
+              "id": "GiNNz",
+              "name": "a200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fde68a"
+            },
+            {
+              "type": "frame",
+              "id": "SA3yA",
+              "name": "a300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fcd34d"
+            },
+            {
+              "type": "frame",
+              "id": "mvO77",
+              "name": "a400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fbbf24"
+            },
+            {
+              "type": "frame",
+              "id": "kNqWo",
+              "name": "a500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f59e0b"
+            },
+            {
+              "type": "frame",
+              "id": "Ptybl",
+              "name": "a600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d97706"
+            },
+            {
+              "type": "frame",
+              "id": "VsVks",
+              "name": "a700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#b45309"
+            },
+            {
+              "type": "frame",
+              "id": "dmRZI",
+              "name": "a800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#92400e"
+            },
+            {
+              "type": "frame",
+              "id": "0msc1",
+              "name": "a900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#78350f"
+            },
+            {
+              "type": "frame",
+              "id": "4uuZ9",
+              "name": "a950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#451a03"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5upWW",
+          "name": "yellowRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "j5iua",
+              "name": "yellowLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "yellow",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "tditK",
+              "name": "y50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fefce8"
+            },
+            {
+              "type": "frame",
+              "id": "lYZSV",
+              "name": "y100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fef9c3"
+            },
+            {
+              "type": "frame",
+              "id": "BMkHQ",
+              "name": "y200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fef08a"
+            },
+            {
+              "type": "frame",
+              "id": "xuBEt",
+              "name": "y300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fde047"
+            },
+            {
+              "type": "frame",
+              "id": "M5A7B",
+              "name": "y400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#facc15"
+            },
+            {
+              "type": "frame",
+              "id": "6hRdd",
+              "name": "y500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#eab308"
+            },
+            {
+              "type": "frame",
+              "id": "EoW3g",
+              "name": "y600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ca8a04"
+            },
+            {
+              "type": "frame",
+              "id": "WpSFF",
+              "name": "y700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a16207"
+            },
+            {
+              "type": "frame",
+              "id": "nHSwO",
+              "name": "y800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#854d0e"
+            },
+            {
+              "type": "frame",
+              "id": "WuxIj",
+              "name": "y900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#713f12"
+            },
+            {
+              "type": "frame",
+              "id": "SZm4X",
+              "name": "y950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#422006"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S7RTv",
+          "name": "limeRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NzIZa",
+              "name": "limeLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "lime",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "y8blA",
+              "name": "li50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f7fee7"
+            },
+            {
+              "type": "frame",
+              "id": "YwtdW",
+              "name": "li100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ecfccb"
+            },
+            {
+              "type": "frame",
+              "id": "TDbgz",
+              "name": "li200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d9f99d"
+            },
+            {
+              "type": "frame",
+              "id": "DrqF3",
+              "name": "li300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#bef264"
+            },
+            {
+              "type": "frame",
+              "id": "sPkkE",
+              "name": "li400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a3e635"
+            },
+            {
+              "type": "frame",
+              "id": "321pO",
+              "name": "li500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#84cc16"
+            },
+            {
+              "type": "frame",
+              "id": "9k5zD",
+              "name": "li600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#65a30d"
+            },
+            {
+              "type": "frame",
+              "id": "LK0c0",
+              "name": "li700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4d7c0f"
+            },
+            {
+              "type": "frame",
+              "id": "FAAqT",
+              "name": "li800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3f6212"
+            },
+            {
+              "type": "frame",
+              "id": "ckDPZ",
+              "name": "li900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#365314"
+            },
+            {
+              "type": "frame",
+              "id": "vm8ag",
+              "name": "li950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1a2e05"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "umECm",
+          "name": "greenRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LodQu",
+              "name": "greenLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "green",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "aKfgh",
+              "name": "gr50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f0fdf4"
+            },
+            {
+              "type": "frame",
+              "id": "pKwIA",
+              "name": "gr100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#dcfce7"
+            },
+            {
+              "type": "frame",
+              "id": "Fn2ZW",
+              "name": "gr200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#bbf7d0"
+            },
+            {
+              "type": "frame",
+              "id": "6YsGf",
+              "name": "gr300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#86efac"
+            },
+            {
+              "type": "frame",
+              "id": "XyelA",
+              "name": "gr400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4ade80"
+            },
+            {
+              "type": "frame",
+              "id": "SbWiB",
+              "name": "gr500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#22c55e"
+            },
+            {
+              "type": "frame",
+              "id": "6MtcY",
+              "name": "gr600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#16a34a"
+            },
+            {
+              "type": "frame",
+              "id": "ACiO4",
+              "name": "gr700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#15803d"
+            },
+            {
+              "type": "frame",
+              "id": "ueQ1k",
+              "name": "gr800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#166534"
+            },
+            {
+              "type": "frame",
+              "id": "mrVuu",
+              "name": "gr900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#14532d"
+            },
+            {
+              "type": "frame",
+              "id": "BSNRQ",
+              "name": "gr950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#052e16"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SGG71",
+          "name": "emeraldRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "1PEgM",
+              "name": "emeraldLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "emerald",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "EVXo3",
+              "name": "em50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ecfdf5"
+            },
+            {
+              "type": "frame",
+              "id": "35is0",
+              "name": "em100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d1fae5"
+            },
+            {
+              "type": "frame",
+              "id": "5JKtK",
+              "name": "em200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a7f3d0"
+            },
+            {
+              "type": "frame",
+              "id": "dvCgk",
+              "name": "em300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6ee7b7"
+            },
+            {
+              "type": "frame",
+              "id": "M8N3J",
+              "name": "em400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#34d399"
+            },
+            {
+              "type": "frame",
+              "id": "2qPCn",
+              "name": "em500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#10b981"
+            },
+            {
+              "type": "frame",
+              "id": "YoUCM",
+              "name": "em600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#059669"
+            },
+            {
+              "type": "frame",
+              "id": "DjgSj",
+              "name": "em700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#047857"
+            },
+            {
+              "type": "frame",
+              "id": "aynQT",
+              "name": "em800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#065f46"
+            },
+            {
+              "type": "frame",
+              "id": "o34vp",
+              "name": "em900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#064e3b"
+            },
+            {
+              "type": "frame",
+              "id": "weHOt",
+              "name": "em950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#022c22"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UjqUd",
+          "name": "tealRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "U7zdC",
+              "name": "tealLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "teal",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "PlUyg",
+              "name": "te50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f0fdfa"
+            },
+            {
+              "type": "frame",
+              "id": "8raPn",
+              "name": "te100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ccfbf1"
+            },
+            {
+              "type": "frame",
+              "id": "rMs9a",
+              "name": "te200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#99f6e4"
+            },
+            {
+              "type": "frame",
+              "id": "fjpTv",
+              "name": "te300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#5eead4"
+            },
+            {
+              "type": "frame",
+              "id": "l0Hsj",
+              "name": "te400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#2dd4bf"
+            },
+            {
+              "type": "frame",
+              "id": "h5nP6",
+              "name": "te500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#14b8a6"
+            },
+            {
+              "type": "frame",
+              "id": "fhzqr",
+              "name": "te600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0d9488"
+            },
+            {
+              "type": "frame",
+              "id": "b9aSE",
+              "name": "te700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0f766e"
+            },
+            {
+              "type": "frame",
+              "id": "j13yH",
+              "name": "te800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#115e59"
+            },
+            {
+              "type": "frame",
+              "id": "sOjSG",
+              "name": "te900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#134e4a"
+            },
+            {
+              "type": "frame",
+              "id": "cS7p9",
+              "name": "te950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#042f2e"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BadXb",
+          "name": "cyanRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "h2Wi0",
+              "name": "cyanLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "cyan",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ayidx",
+              "name": "cy50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ecfeff"
+            },
+            {
+              "type": "frame",
+              "id": "Q1HV7",
+              "name": "cy100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#cffafe"
+            },
+            {
+              "type": "frame",
+              "id": "72nVb",
+              "name": "cy200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a5f3fc"
+            },
+            {
+              "type": "frame",
+              "id": "hlcrH",
+              "name": "cy300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#67e8f9"
+            },
+            {
+              "type": "frame",
+              "id": "SpJMf",
+              "name": "cy400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#22d3ee"
+            },
+            {
+              "type": "frame",
+              "id": "TEDci",
+              "name": "cy500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#06b6d4"
+            },
+            {
+              "type": "frame",
+              "id": "GukSA",
+              "name": "cy600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0891b2"
+            },
+            {
+              "type": "frame",
+              "id": "JJWLI",
+              "name": "cy700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0e7490"
+            },
+            {
+              "type": "frame",
+              "id": "FdIJn",
+              "name": "cy800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#155e75"
+            },
+            {
+              "type": "frame",
+              "id": "TPSGg",
+              "name": "cy900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#164e63"
+            },
+            {
+              "type": "frame",
+              "id": "mgLJH",
+              "name": "cy950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#083344"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nlDJe",
+          "name": "skyRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eMGMd",
+              "name": "skyLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "sky",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ioqTI",
+              "name": "sk50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f0f9ff"
+            },
+            {
+              "type": "frame",
+              "id": "iw4vx",
+              "name": "sk100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e0f2fe"
+            },
+            {
+              "type": "frame",
+              "id": "vMQat",
+              "name": "sk200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#bae6fd"
+            },
+            {
+              "type": "frame",
+              "id": "KtkL4",
+              "name": "sk300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#7dd3fc"
+            },
+            {
+              "type": "frame",
+              "id": "uzuDv",
+              "name": "sk400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#38bdf8"
+            },
+            {
+              "type": "frame",
+              "id": "AWz1M",
+              "name": "sk500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0ea5e9"
+            },
+            {
+              "type": "frame",
+              "id": "JhYjO",
+              "name": "sk600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0284c7"
+            },
+            {
+              "type": "frame",
+              "id": "mZxzr",
+              "name": "sk700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0369a1"
+            },
+            {
+              "type": "frame",
+              "id": "OZyMS",
+              "name": "sk800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#075985"
+            },
+            {
+              "type": "frame",
+              "id": "n3DtQ",
+              "name": "sk900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#0c4a6e"
+            },
+            {
+              "type": "frame",
+              "id": "WuWJ4",
+              "name": "sk950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#082f49"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "c2CwY",
+          "name": "blueRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aKe4w",
+              "name": "blueLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "blue",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "3Sewu",
+              "name": "bl50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#eff6ff"
+            },
+            {
+              "type": "frame",
+              "id": "48c1l",
+              "name": "bl100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#dbeafe"
+            },
+            {
+              "type": "frame",
+              "id": "rOFFT",
+              "name": "bl200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#bfdbfe"
+            },
+            {
+              "type": "frame",
+              "id": "HXyC1",
+              "name": "bl300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#93c5fd"
+            },
+            {
+              "type": "frame",
+              "id": "Ah0Vu",
+              "name": "bl400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#60a5fa"
+            },
+            {
+              "type": "frame",
+              "id": "1F0cC",
+              "name": "bl500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3b82f6"
+            },
+            {
+              "type": "frame",
+              "id": "2ZnVR",
+              "name": "bl600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#2563eb"
+            },
+            {
+              "type": "frame",
+              "id": "jAYHI",
+              "name": "bl700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1d4ed8"
+            },
+            {
+              "type": "frame",
+              "id": "BIoqo",
+              "name": "bl800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1e40af"
+            },
+            {
+              "type": "frame",
+              "id": "z78nW",
+              "name": "bl900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1e3a8a"
+            },
+            {
+              "type": "frame",
+              "id": "47C85",
+              "name": "bl950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#172554"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZJYdu",
+          "name": "indigoRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yRohq",
+              "name": "indigoLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "indigo",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "2plBh",
+              "name": "in50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#eef2ff"
+            },
+            {
+              "type": "frame",
+              "id": "wfstF",
+              "name": "in100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e0e7ff"
+            },
+            {
+              "type": "frame",
+              "id": "SE5yM",
+              "name": "in200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#c7d2fe"
+            },
+            {
+              "type": "frame",
+              "id": "Ot5eJ",
+              "name": "in300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a5b4fc"
+            },
+            {
+              "type": "frame",
+              "id": "s2CXh",
+              "name": "in400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#818cf8"
+            },
+            {
+              "type": "frame",
+              "id": "OPGSE",
+              "name": "in500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6366f1"
+            },
+            {
+              "type": "frame",
+              "id": "3PKkL",
+              "name": "in600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4f46e5"
+            },
+            {
+              "type": "frame",
+              "id": "zv6kO",
+              "name": "in700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4338ca"
+            },
+            {
+              "type": "frame",
+              "id": "hNVa5",
+              "name": "in800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3730a3"
+            },
+            {
+              "type": "frame",
+              "id": "LQVTw",
+              "name": "in900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#312e81"
+            },
+            {
+              "type": "frame",
+              "id": "oZGcf",
+              "name": "in950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#1e1b4b"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0M9HF",
+          "name": "violetRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "o2Of5",
+              "name": "violetLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "violet",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "vLDyv",
+              "name": "vi50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f5f3ff"
+            },
+            {
+              "type": "frame",
+              "id": "IR3fz",
+              "name": "vi100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ede9fe"
+            },
+            {
+              "type": "frame",
+              "id": "FyW0P",
+              "name": "vi200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ddd6fe"
+            },
+            {
+              "type": "frame",
+              "id": "u2hvE",
+              "name": "vi300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#c4b5fd"
+            },
+            {
+              "type": "frame",
+              "id": "2caOm",
+              "name": "vi400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a78bfa"
+            },
+            {
+              "type": "frame",
+              "id": "bnWyz",
+              "name": "vi500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#8b5cf6"
+            },
+            {
+              "type": "frame",
+              "id": "YCoaW",
+              "name": "vi600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#7c3aed"
+            },
+            {
+              "type": "frame",
+              "id": "Pznoj",
+              "name": "vi700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6d28d9"
+            },
+            {
+              "type": "frame",
+              "id": "PewHk",
+              "name": "vi800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#5b21b6"
+            },
+            {
+              "type": "frame",
+              "id": "HycTi",
+              "name": "vi900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4c1d95"
+            },
+            {
+              "type": "frame",
+              "id": "Y1w8u",
+              "name": "vi950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#2e1065"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "73uQg",
+          "name": "purpleRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WrB10",
+              "name": "purpleLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "purple",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "CxnTu",
+              "name": "pu50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#faf5ff"
+            },
+            {
+              "type": "frame",
+              "id": "UNaBa",
+              "name": "pu100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f3e8ff"
+            },
+            {
+              "type": "frame",
+              "id": "ofiZ8",
+              "name": "pu200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e9d5ff"
+            },
+            {
+              "type": "frame",
+              "id": "8adw1",
+              "name": "pu300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d8b4fe"
+            },
+            {
+              "type": "frame",
+              "id": "GwGXE",
+              "name": "pu400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#c084fc"
+            },
+            {
+              "type": "frame",
+              "id": "xaGF6",
+              "name": "pu500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a855f7"
+            },
+            {
+              "type": "frame",
+              "id": "fujvN",
+              "name": "pu600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#9333ea"
+            },
+            {
+              "type": "frame",
+              "id": "vHENL",
+              "name": "pu700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#7e22ce"
+            },
+            {
+              "type": "frame",
+              "id": "M9vqE",
+              "name": "pu800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#6b21a8"
+            },
+            {
+              "type": "frame",
+              "id": "tdfnD",
+              "name": "pu900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#581c87"
+            },
+            {
+              "type": "frame",
+              "id": "LEppa",
+              "name": "pu950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#3b0764"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7hG5P",
+          "name": "fuchsiaRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NWfmp",
+              "name": "fuchsiaLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "fuchsia",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "5LlaX",
+              "name": "fu50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fdf4ff"
+            },
+            {
+              "type": "frame",
+              "id": "fq7mG",
+              "name": "fu100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fae8ff"
+            },
+            {
+              "type": "frame",
+              "id": "2sQG5",
+              "name": "fu200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f5d0fe"
+            },
+            {
+              "type": "frame",
+              "id": "UeGWo",
+              "name": "fu300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f0abfc"
+            },
+            {
+              "type": "frame",
+              "id": "Uwg2c",
+              "name": "fu400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e879f9"
+            },
+            {
+              "type": "frame",
+              "id": "aOh19",
+              "name": "fu500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#d946ef"
+            },
+            {
+              "type": "frame",
+              "id": "MHMRC",
+              "name": "fu600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#c026d3"
+            },
+            {
+              "type": "frame",
+              "id": "K3ewv",
+              "name": "fu700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#a21caf"
+            },
+            {
+              "type": "frame",
+              "id": "Rq5SJ",
+              "name": "fu800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#86198f"
+            },
+            {
+              "type": "frame",
+              "id": "bUyvX",
+              "name": "fu900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#701a75"
+            },
+            {
+              "type": "frame",
+              "id": "pEskB",
+              "name": "fu950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4a044e"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5Gr1d",
+          "name": "pinkRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "IgSIw",
+              "name": "pinkLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "pink",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "nBrjp",
+              "name": "pi50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fdf2f8"
+            },
+            {
+              "type": "frame",
+              "id": "rJw9X",
+              "name": "pi100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fce7f3"
+            },
+            {
+              "type": "frame",
+              "id": "ayQhJ",
+              "name": "pi200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fbcfe8"
+            },
+            {
+              "type": "frame",
+              "id": "Ve75I",
+              "name": "pi300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f9a8d4"
+            },
+            {
+              "type": "frame",
+              "id": "XBKBP",
+              "name": "pi400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f472b6"
+            },
+            {
+              "type": "frame",
+              "id": "k9KdL",
+              "name": "pi500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ec4899"
+            },
+            {
+              "type": "frame",
+              "id": "UFECb",
+              "name": "pi600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#db2777"
+            },
+            {
+              "type": "frame",
+              "id": "wsqE7",
+              "name": "pi700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#be185d"
+            },
+            {
+              "type": "frame",
+              "id": "4Zw8H",
+              "name": "pi800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#9d174d"
+            },
+            {
+              "type": "frame",
+              "id": "0sNwj",
+              "name": "pi900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#831843"
+            },
+            {
+              "type": "frame",
+              "id": "BfjXt",
+              "name": "pi950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#500724"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZVQWW",
+          "name": "roseRow",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hnhOK",
+              "name": "roseLbl",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 80,
+              "content": "rose",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "1nh19",
+              "name": "ro50",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fff1f2"
+            },
+            {
+              "type": "frame",
+              "id": "fzaQf",
+              "name": "ro100",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#ffe4e6"
+            },
+            {
+              "type": "frame",
+              "id": "k4E2b",
+              "name": "ro200",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fecdd3"
+            },
+            {
+              "type": "frame",
+              "id": "pL08X",
+              "name": "ro300",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fda4af"
+            },
+            {
+              "type": "frame",
+              "id": "jqoOD",
+              "name": "ro400",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#fb7185"
+            },
+            {
+              "type": "frame",
+              "id": "6B9iu",
+              "name": "ro500",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#f43f5e"
+            },
+            {
+              "type": "frame",
+              "id": "g08IL",
+              "name": "ro600",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#e11d48"
+            },
+            {
+              "type": "frame",
+              "id": "ACNOx",
+              "name": "ro700",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#be123c"
+            },
+            {
+              "type": "frame",
+              "id": "fErLd",
+              "name": "ro800",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#9f1239"
+            },
+            {
+              "type": "frame",
+              "id": "tAADe",
+              "name": "ro900",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#881337"
+            },
+            {
+              "type": "frame",
+              "id": "HxxHg",
+              "name": "ro950",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#4c0519"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qNlQ9",
+      "x": -1543,
+      "y": -466,
+      "name": "Font Pairings — Serif + Sans-Serif",
+      "width": 1700,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 32,
+      "children": [
+        {
+          "type": "text",
+          "id": "EmoyN",
+          "name": "title",
+          "fill": "#111111",
+          "content": "Font Pairings — Serif Headings + Sans-Serif Body",
+          "fontFamily": "Inter",
+          "fontSize": 24,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "kP2vf",
+          "name": "subtitle",
+          "fill": "#666666",
+          "content": "Pick a pairing or mix and match. These are all available on Google Fonts.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "8etWk",
+          "name": "row1",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "8gXHg",
+              "name": "pairing1",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pmHPM",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "A — Classic & Modern",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "sVkkW",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "SmW1y",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "USY09",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "Playfair Display 700  ·  Inter 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WTd8b",
+              "name": "pairing2",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0j3un",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "B — Warm & Readable",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ollgB",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "7xshW",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Open Sans",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "RwSLq",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "Merriweather 700  ·  Open Sans 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mwiAG",
+          "name": "row2",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "g8vO6",
+              "name": "pairing3",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p8du7",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "C — Elegant & Clean",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "q3shF",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Lora",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "cX3oL",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Roboto",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "fRWKH",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "Lora 700  ·  Roboto 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kkhq0",
+              "name": "pairing4",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nQp7w",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "D — Cohesive & Contemporary",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Xtgeq",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.2,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 28
+                },
+                {
+                  "type": "text",
+                  "id": "WoFm2",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "DM Sans",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "t0oDp",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "DM Serif Display 400  ·  DM Sans 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G2Vto",
+          "name": "row3",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Qn4xh",
+              "name": "pairing5",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Kk0jh",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "E — Editorial & Professional",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "xwcXC",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Libre Baskerville",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "E5of9",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Source Sans 3",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "qnjQJ",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "Libre Baskerville 700  ·  Source Sans 3 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JKNG0",
+              "name": "pairing6",
+              "width": "fill_container",
+              "fill": "#fafafa",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tUNe6",
+                  "name": "label",
+                  "fill": "#a1a1aa",
+                  "content": "F — Refined & Friendly",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "vXC7X",
+                  "name": "heading",
+                  "fill": "#18181b",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The quick brown fox jumps over the lazy dog",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "G9dcD",
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Nunito",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "b6gWs",
+                  "name": "caption",
+                  "fill": "#a1a1aa",
+                  "content": "Cormorant Garamond 700  ·  Nunito 400",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

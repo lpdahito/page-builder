@@ -1,5 +1,5 @@
 ---
-description: Establish or update the design system (colors, typography, layout)
+description: Establish or update the design system (typography, colors, layout)
 allowed-tools: [Read, Write, Edit, Glob, AskUserQuestion, mcp__pencil__get_guidelines, mcp__pencil__get_style_guide_tags, mcp__pencil__get_style_guide, mcp__pencil__batch_design, mcp__pencil__batch_get, mcp__pencil__set_variables, mcp__pencil__get_screenshot, mcp__pencil__find_empty_space_on_canvas, mcp__pencil__open_document, mcp__pencil__get_editor_state, mcp__figma__generate_figma_design, mcp__figma__get_screenshot, mcp__figma__get_variable_defs, mcp__paper__get_basic_info, mcp__paper__get_selection, mcp__paper__get_font_family_info, mcp__paper__create_artboard, mcp__paper__write_html, mcp__paper__get_screenshot, mcp__paper__update_styles, mcp__paper__set_text_content, mcp__paper__duplicate_nodes, mcp__paper__delete_nodes, mcp__paper__finish_working_on_nodes, mcp__paper__get_guide]
 ---
 
@@ -42,13 +42,80 @@ Store any relevant patterns and guidelines internally to inform your design deci
 
 Check `assets/` subfolders for logos, inspiration images, or brand materials. If found, use them to inform color and style suggestions in the following steps. Mention to the designer what you found.
 
-## Step 1: Color palette
+## Step 1: Typography
+
+Ask the designer:
+
+"Let's pick your typography. Would you like to:"
+1. **Browse pairings** — I'll render font pairings in your design tool so you can compare visually
+2. **Custom** — specify your own fonts
+
+Wait for their answer.
+
+### Option 1: Browse pairings
+
+The `main.pen` file ships with a pre-built **"Font Pairings — Serif + Sans-Serif"** frame (node ID `qNlQ9`) containing 6 popular Google Fonts pairings:
+- **A** — Playfair Display + Inter (Classic & Modern)
+- **B** — Merriweather + Open Sans (Warm & Readable)
+- **C** — Lora + Roboto (Elegant & Clean)
+- **D** — DM Serif Display + DM Sans (Cohesive & Contemporary)
+- **E** — Libre Baskerville + Source Sans 3 (Editorial & Professional)
+- **F** — Cormorant Garamond + Nunito (Refined & Friendly)
+
+**If Pencil:**
+- The pairings are already in `main.pen`. Call `mcp__pencil__get_screenshot` on the font pairings frame (node ID `qNlQ9`) so the designer can see them.
+
+**If Figma:**
+- Use `mcp__figma__generate_figma_design` to create a font pairing frame with the same 6 pairings
+- Call `mcp__figma__get_screenshot`
+
+**If Paper:**
+- Use `mcp__paper__create_artboard` to create a typography artboard
+- Use `mcp__paper__write_html` to render each pairing — one pairing per call
+- Call `mcp__paper__get_screenshot` after every 2 pairings to review
+- Call `mcp__paper__finish_working_on_nodes` when done
+
+Then ask the designer:
+
+"Here are some font pairings (serif headings + sans-serif body). Which one do you like? Or I can:
+- Show you **more pairings** with a different vibe (e.g. bolder, more playful, more editorial)
+- **Mix and match** — pick a heading font from one pairing and a body font from another"
+
+Wait for their answer. Once chosen, keep the font pairing frame in `main.pen` for reference.
+
+If the designer asks for more options, generate a fresh set of 3–4 pairings with a different stylistic direction and render them in a new frame. Use Google Fonts. Before rendering, verify each font is available:
+- **If Paper:** call `mcp__paper__get_font_family_info` for each font family
+- **If Pencil / Figma:** confirm the fonts are available on Google Fonts
+
+For each new pairing, show:
+- The pairing name/label (e.g. "Pairing G — Bold & Expressive")
+- A large heading sample using the heading font (e.g. "The quick brown fox jumps over the lazy dog")
+- A body paragraph sample using the body font (2–3 sentences of realistic placeholder text)
+- Font names and weights displayed as a small caption
+
+Repeat until the designer is satisfied. Delete any extra pairing frames from the design tool once a choice is made (but keep the original `main.pen` pairings frame).
+
+### Option 2: Custom
+
+Let the designer specify their own fonts. Verify availability (Google Fonts or system fonts) before accepting. If a font isn't available, suggest close alternatives.
+
+### After typography selection
+
+From the chosen pairing, establish:
+- **Heading font** — family and weight (e.g. Sora, 700)
+- **Body font** — family and weight (e.g. Inter, 400)
+- **Type scale** — ask the designer: "What density do you prefer for text sizing?"
+  - **Compact** — smaller sizes, tighter spacing (good for data-heavy UIs)
+  - **Default** — balanced readability
+  - **Spacious** — larger sizes, generous line height (good for marketing/editorial)
+
+## Step 2: Color palette
 
 Ask the designer:
 
 "Let's pick your color palette. Would you like to:"
 1. **Browse colors** — I'll render Tailwind's color palettes in your design tool so you can pick visually
-2. **Let me propose** — I'll suggest a palette based on your app type and description, and you approve or adjust
+2. **Let me propose** — I'll suggest a palette based on your app type, description, and chosen typography, and you approve or adjust
 3. **Provide your own** — share specific Tailwind color names (e.g. "blue for primary, slate for neutrals")
 
 Wait for their answer.
@@ -83,7 +150,7 @@ Wait for their answer. Once chosen, delete the swatch frames from the design too
 
 ### Option 2: Let me propose
 
-Based on the app type and project description from `design-system.json`, propose a palette using Tailwind color families. For example:
+Based on the app type, project description, and chosen typography from `design-system.json`, propose a palette using Tailwind color families. Let the typography mood inform your color suggestions — e.g. a bold geometric font pairs well with saturated, confident colors, while a delicate serif suits more muted, refined tones. For example:
 - SaaS dashboard → zinc neutrals, blue primary, amber accent
 - E-commerce → stone neutrals, emerald primary, rose accent
 - Portfolio → neutral neutrals, indigo primary, amber accent
@@ -117,67 +184,6 @@ For each role, define both light and dark mode usage:
 - Dark mode: neutral-950 background, neutral-100 text, primary-400 buttons
 
 Render a **palette preview** in the design tool showing the chosen colors with their roles labeled. Take a screenshot and ask the designer to confirm before proceeding.
-
-## Step 2: Typography
-
-Ask the designer:
-
-"Let's pick your typography. Would you like to:"
-1. **Browse pairings** — I'll render font pairings in your design tool so you can compare visually
-2. **Custom** — specify your own fonts
-
-Wait for their answer.
-
-### Option 1: Browse pairings
-
-Based on the app type, project description, and inspiration notes from `design-system.json`, select 3–4 font pairings that suit the project. Each pairing has a heading font and a body font.
-
-Use Google Fonts. Before rendering, verify each font is available:
-- **If Paper:** call `mcp__paper__get_font_family_info` for each font family
-- **If Pencil / Figma:** confirm the fonts are available on Google Fonts
-
-Render the pairings side by side in the design tool. For each pairing, show:
-- The pairing name/label (e.g. "Pairing A — Clean & Modern")
-- A large heading sample using the heading font (e.g. "The quick brown fox")
-- A body paragraph sample using the body font (2–3 sentences of realistic placeholder text)
-- Font names and weights displayed as a small caption
-
-**If Pencil:**
-- Call `mcp__pencil__find_empty_space_on_canvas` to find space
-- Use `mcp__pencil__batch_design` to create a frame with the pairings laid out side by side
-- Call `mcp__pencil__get_screenshot` to show the result
-
-**If Figma:**
-- Use `mcp__figma__generate_figma_design` to create the font pairing frame
-- Call `mcp__figma__get_screenshot`
-
-**If Paper:**
-- Use `mcp__paper__create_artboard` to create a typography artboard
-- Use `mcp__paper__write_html` to render each pairing — one pairing per call
-- Call `mcp__paper__get_screenshot` after every 2 pairings to review
-- Call `mcp__paper__finish_working_on_nodes` when done
-
-Then ask the designer:
-
-"Here are some font pairings that suit your project. Which one do you like? Or I can:
-- Show you **more pairings** with a different vibe (e.g. bolder, more playful, more editorial)
-- **Mix and match** — pick a heading font from one pairing and a body font from another"
-
-Wait for their answer. If the designer asks for more options, generate a fresh set of 3–4 pairings with a different stylistic direction and render them. Repeat until the designer is satisfied. Delete pairing frames from the design tool once a choice is made.
-
-### Option 2: Custom
-
-Let the designer specify their own fonts. Verify availability (Google Fonts or system fonts) before accepting. If a font isn't available, suggest close alternatives.
-
-### After typography selection
-
-From the chosen pairing, establish:
-- **Heading font** — family and weight (e.g. Sora, 700)
-- **Body font** — family and weight (e.g. Inter, 400)
-- **Type scale** — ask the designer: "What density do you prefer for text sizing?"
-  - **Compact** — smaller sizes, tighter spacing (good for data-heavy UIs)
-  - **Default** — balanced readability
-  - **Spacious** — larger sizes, generous line height (good for marketing/editorial)
 
 ## Step 3: Layout style
 
