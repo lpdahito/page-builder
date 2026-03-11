@@ -109,6 +109,50 @@ From the chosen pairing, establish:
   - **Default** — balanced readability
   - **Spacious** — larger sizes, generous line height (good for marketing/editorial)
 
+### Live preview: apply typography to Hero template
+
+Immediately after the designer confirms their font choice, update the **"Template - Hero"** frame to preview the selected typography. This gives the designer instant visual feedback.
+
+**Before applying changes**, read the current font values from the Hero template nodes and store them internally as the "default typography" so you can revert later if the designer wants to try a different pairing.
+
+**If Pencil:**
+- Call `mcp__pencil__batch_get` with node IDs `["7Rk2w", "ylKJV", "SDVfy", "clF3x"]` to capture current `fontFamily` and `fontWeight` values
+- Store these as the defaults (typically: Inter for body, DM Serif Display for heading)
+
+Update these text nodes with the chosen fonts:
+
+| Node ID | Element | What to update |
+|---------|---------|----------------|
+| `7Rk2w` | Heading text | `fontFamily` → heading font, `fontWeight` → heading weight |
+| `ylKJV` | Body text (subheading) | `fontFamily` → body font |
+| `SDVfy` | Body text (secondary) | `fontFamily` → body font |
+| `clF3x` | CTA button text | `fontFamily` → body font |
+
+**If Pencil:**
+- Use `mcp__pencil__batch_design` with update operations to apply all font changes in a single call
+- Call `mcp__pencil__get_screenshot` on the hero frame (node ID `vZMVT`) to show the result
+
+**If Figma:**
+- Use `mcp__figma__generate_figma_design` to update the hero preview with the chosen fonts
+- Call `mcp__figma__get_screenshot`
+
+**If Paper:**
+- Use `mcp__paper__write_html` to update the hero preview text with the chosen fonts
+- Call `mcp__paper__get_screenshot`
+
+Show the screenshot and ask the designer:
+
+"Here's a preview of your chosen fonts applied to a hero layout. What do you think?
+- **Keep it** — lock in this pairing and move on to colors
+- **Try another** — I'll revert the preview and you can pick a different pairing
+- **Browse more** — I'll show you additional pairings to compare"
+
+Wait for their answer. If they want to try another:
+1. Revert the Hero template to the stored default font values using the same update operations
+2. Go back to the typography selection step
+
+Repeat until the designer is happy with their choice. Then proceed to Step 2.
+
 ## Step 2: Color palette
 
 Ask the designer:
@@ -185,19 +229,25 @@ For each role, define both light and dark mode usage:
 
 Render a **palette preview** in the design tool showing the chosen colors with their roles labeled. Take a screenshot and ask the designer to confirm before proceeding.
 
-### Hero template preview
+### Live preview: apply colors to Hero template
 
-After both typography (Step 1) and colors (Step 2) are confirmed, update the **"Template - Hero"** frame in `main.pen` (node ID `vZMVT`) to show how the chosen font pairing and color palette look together in a realistic layout.
+After the designer picks a color palette, update the **"Template - Hero"** frame in `main.pen` (node ID `vZMVT`) with the chosen colors. Typography was already applied in Step 1, so only update colors here.
 
-Update these nodes with the designer's choices:
+**Before applying changes**, read the current fill/stroke values from the Hero template nodes and store them internally as the "default colors" so you can revert later if the designer wants to try a different palette.
+
+**If Pencil:**
+- Call `mcp__pencil__batch_get` with node IDs `["vZMVT", "7Rk2w", "ylKJV", "SDVfy", "clF3x", "Wjq3H", "MCxfG", "XVpZ2", "m92vn", "sMJ3H", "Y0qsu", "GxVla"]` and `resolveVariables: true` to capture current `fill` and `stroke.fill` values
+- Store these as the defaults
+
+Update these nodes with the designer's color choices:
 
 | Node ID | Element | What to update |
 |---------|---------|----------------|
 | `vZMVT` | Hero frame background | `fill` → neutral-50 shade |
-| `7Rk2w` | Heading text | `fontFamily` → heading font, `fontWeight` → heading weight, `fill` → neutral-900 shade |
-| `ylKJV` | Body text (subheading) | `fontFamily` → body font, `fill` → neutral-500 shade |
-| `SDVfy` | Body text (secondary) | `fontFamily` → body font, `fill` → neutral-400 shade |
-| `clF3x` | CTA button text | `fontFamily` → body font, `fill` → white |
+| `7Rk2w` | Heading text | `fill` → neutral-900 shade |
+| `ylKJV` | Body text (subheading) | `fill` → neutral-500 shade |
+| `SDVfy` | Body text (secondary) | `fill` → neutral-400 shade |
+| `clF3x` | CTA button text | `fill` → white |
 | `Wjq3H` | CTA button background | `fill` → primary-600 shade |
 | `MCxfG` | Content wrapper | `fill` → neutral-50 shade |
 | `XVpZ2` | Head wrapper | `fill` → neutral-50 shade |
@@ -207,18 +257,33 @@ Update these nodes with the designer's choices:
 | `GxVla` | CTA chevron | `stroke.fill` → white |
 
 **If Pencil:**
-- Use `mcp__pencil__batch_design` with update operations to apply all changes in a single call
+- Use `mcp__pencil__batch_design` with update operations to apply all color changes in a single call
 - Call `mcp__pencil__get_screenshot` on the hero frame (node ID `vZMVT`) to show the result
 
 **If Figma:**
-- Use `mcp__figma__generate_figma_design` to create a hero preview frame with the same layout and the chosen fonts/colors
+- Use `mcp__figma__generate_figma_design` to update the hero preview with the chosen colors
 - Call `mcp__figma__get_screenshot`
 
 **If Paper:**
-- Use `mcp__paper__create_artboard` and `mcp__paper__write_html` to render the hero preview
+- Use `mcp__paper__write_html` to update the hero preview colors
 - Call `mcp__paper__get_screenshot`
 
-Show the screenshot and tell the designer: "Here's how your font pairing and color palette look together in a hero layout."
+Show the screenshot and ask the designer:
+
+"Here's your complete design direction — fonts and colors together. What do you think?
+- **Keep it** — lock in this palette and move on to layout
+- **Try another palette** — I'll revert the colors and you can pick different ones
+- **Change the fonts too** — I'll revert everything and we can start fresh from typography"
+
+Wait for their answer. If they want to try another palette:
+1. Revert the Hero template colors to the stored defaults using the same update operations
+2. Go back to the color selection step
+
+If they want to change fonts too:
+1. Revert both colors and fonts to the stored defaults
+2. Go back to Step 1 (typography)
+
+Repeat until the designer is happy. Then proceed to Step 3.
 
 ## Step 3: Layout style
 
