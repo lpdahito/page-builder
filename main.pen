@@ -3006,7 +3006,7 @@
     {
       "type": "frame",
       "id": "qNlQ9",
-      "x": -1543,
+      "x": -1522,
       "y": -466,
       "name": "Font Pairings — Serif + Sans-Serif",
       "width": 1700,
@@ -3087,7 +3087,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3146,7 +3147,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "Open Sans",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3214,7 +3216,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "Roboto",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3260,7 +3263,8 @@
                   "content": "The quick brown fox jumps over the lazy dog",
                   "lineHeight": 1.2,
                   "fontFamily": "DM Serif Display",
-                  "fontSize": 28
+                  "fontSize": 28,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3272,7 +3276,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "DM Sans",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3340,7 +3345,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "Source Sans 3",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3399,7 +3405,8 @@
                   "content": "Good typography establishes a visual hierarchy that guides the reader naturally through content. The right pairing creates harmony between headings and body text, balancing personality with readability.",
                   "lineHeight": 1.6,
                   "fontFamily": "Nunito",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -3412,6 +3419,193 @@
                   "fontWeight": "normal"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vZMVT",
+      "x": 2060,
+      "y": -466,
+      "name": "Template - Hero",
+      "clip": true,
+      "width": 1440,
+      "height": 700,
+      "fill": "#FFFFFF",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "MCxfG",
+          "x": 320,
+          "y": 154,
+          "name": "content wrapper",
+          "clip": true,
+          "width": 800,
+          "height": 546,
+          "fill": "#ffffffff",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zLh17",
+              "name": "content",
+              "clip": true,
+              "width": 579,
+              "height": 280,
+              "fill": "#FFFFFF",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SDVfy",
+                  "x": 234,
+                  "y": 254,
+                  "name": "body",
+                  "fill": "#3f3f46",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#000000ff"
+                  },
+                  "textGrowth": "fixed-width",
+                  "width": 102,
+                  "content": "Some more text...",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Nunito",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "XVpZ2",
+                  "x": 5,
+                  "y": 2,
+                  "name": "head",
+                  "clip": true,
+                  "width": 560,
+                  "height": 185,
+                  "fill": "#FFFFFF",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7Rk2w",
+                      "x": 16,
+                      "y": -2,
+                      "name": "heading",
+                      "fill": "#18181b",
+                      "content": "The quick brown fox jumps\nover the lazy dog...",
+                      "lineHeight": 1.2,
+                      "textAlign": "center",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 42,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ylKJV",
+                      "x": 43.5,
+                      "y": 119,
+                      "name": "body",
+                      "fill": "#3f3f46",
+                      "content": "Good typography establishes a visual hierarchy that guides the reader.\nThe right pairing creates harmony between headings and body.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m92vn",
+                  "x": 179.5,
+                  "y": 193.5,
+                  "name": "CTA",
+                  "clip": true,
+                  "width": 212,
+                  "height": 58,
+                  "fill": "#FFFFFF",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 30,
+                      "id": "Wjq3H",
+                      "x": 16,
+                      "y": 2,
+                      "fill": "#000000ff",
+                      "width": 180,
+                      "height": 50
+                    },
+                    {
+                      "type": "text",
+                      "id": "clF3x",
+                      "x": 43.5,
+                      "y": 16.5,
+                      "name": "body",
+                      "fill": "#ffffffff",
+                      "content": "Go to my portfolio",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Nunito",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "path",
+                      "id": "GxVla",
+                      "x": 172,
+                      "y": 23,
+                      "geometry": "M0 12l6-6-6-6",
+                      "width": 4,
+                      "height": 8,
+                      "stroke": {
+                        "align": "center",
+                        "thickness": 2,
+                        "join": "round",
+                        "cap": "round",
+                        "fill": "#ffffffff"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sMJ3H",
+          "x": 320,
+          "y": 0,
+          "name": "nav",
+          "clip": true,
+          "width": 800,
+          "height": 150,
+          "fill": "#ffffffff",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "path",
+              "id": "Y0qsu",
+              "geometry": "M18 0l-18 0m12 7l-12 0m14 7l-14 0",
+              "width": 16,
+              "height": 12,
+              "stroke": {
+                "align": "center",
+                "thickness": 2,
+                "join": "round",
+                "cap": "round",
+                "fill": "#000000"
+              }
             }
           ]
         }

@@ -185,6 +185,41 @@ For each role, define both light and dark mode usage:
 
 Render a **palette preview** in the design tool showing the chosen colors with their roles labeled. Take a screenshot and ask the designer to confirm before proceeding.
 
+### Hero template preview
+
+After both typography (Step 1) and colors (Step 2) are confirmed, update the **"Template - Hero"** frame in `main.pen` (node ID `vZMVT`) to show how the chosen font pairing and color palette look together in a realistic layout.
+
+Update these nodes with the designer's choices:
+
+| Node ID | Element | What to update |
+|---------|---------|----------------|
+| `vZMVT` | Hero frame background | `fill` → neutral-50 shade |
+| `7Rk2w` | Heading text | `fontFamily` → heading font, `fontWeight` → heading weight, `fill` → neutral-900 shade |
+| `ylKJV` | Body text (subheading) | `fontFamily` → body font, `fill` → neutral-500 shade |
+| `SDVfy` | Body text (secondary) | `fontFamily` → body font, `fill` → neutral-400 shade |
+| `clF3x` | CTA button text | `fontFamily` → body font, `fill` → white |
+| `Wjq3H` | CTA button background | `fill` → primary-600 shade |
+| `MCxfG` | Content wrapper | `fill` → neutral-50 shade |
+| `XVpZ2` | Head wrapper | `fill` → neutral-50 shade |
+| `m92vn` | CTA wrapper | `fill` → neutral-50 shade |
+| `sMJ3H` | Nav background | `fill` → neutral-50 shade |
+| `Y0qsu` | Nav hamburger icon | `stroke.fill` → neutral-900 shade |
+| `GxVla` | CTA chevron | `stroke.fill` → white |
+
+**If Pencil:**
+- Use `mcp__pencil__batch_design` with update operations to apply all changes in a single call
+- Call `mcp__pencil__get_screenshot` on the hero frame (node ID `vZMVT`) to show the result
+
+**If Figma:**
+- Use `mcp__figma__generate_figma_design` to create a hero preview frame with the same layout and the chosen fonts/colors
+- Call `mcp__figma__get_screenshot`
+
+**If Paper:**
+- Use `mcp__paper__create_artboard` and `mcp__paper__write_html` to render the hero preview
+- Call `mcp__paper__get_screenshot`
+
+Show the screenshot and tell the designer: "Here's how your font pairing and color palette look together in a hero layout."
+
 ## Step 3: Layout style
 
 Ask the designer:
